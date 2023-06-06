@@ -24,7 +24,7 @@ function hasCharacter(character,char) {
         return false;
 }
 console.log(hasCharacter(characters,"A"))
-//join function: the function exportCSV returns a string containing the names separated by a comma.
+//JOIN function: the function exportCSV returns a string containing the names separated by a comma.
 function exportCSV(allNames){
     let aN = allNames.join(",");
     return aN;
