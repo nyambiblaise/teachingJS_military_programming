@@ -1,2 +1,3 @@
-let t=0;
-let g=3;
+let t=1;
+let g=32;
+let k;
