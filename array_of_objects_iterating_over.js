@@ -69,4 +69,24 @@ function createArrayOfHobbies() {
     })
     return hobbs;
 }
-console.log(createArrayOfHobbies(listOfUsers))
+function findSumOfAllAges(){
+    let sum = 0;
+    let g = listOfUsers.forEach(function (s) {
+        sum = sum + s.age
+    });
+    return sum;
+}
+function sumAllGPA(){
+    let sum = 0;
+    let g = listOfUsers.forEach(function (s) {
+        sum = sum + s.examGrades.gpa;
+    })
+    return sum;
+}
+//here, we return an array of full names by mapping the combination of the first and last names to a scalar in the callback function
+function returnAllFullNames() {
+    return listOfUsers.map(function (names) {
+        return `${names.firstName} ${names.lastName}`;
+    })
+}
+console.log(returnAllFullNames())
