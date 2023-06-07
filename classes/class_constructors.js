@@ -2,6 +2,6 @@
 class User{
     constructor(){
         console.log("this is a constructor");
-    }
+    };
 }
 let user = new User();
