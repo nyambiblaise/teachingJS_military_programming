@@ -262,3 +262,4 @@ let data = [{
         "is_day": "yes"
     }
 }];
+let we = new WeatherCities(data);
