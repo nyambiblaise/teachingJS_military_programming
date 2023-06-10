@@ -29,3 +29,6 @@ class Bill{
     }
 }
 const bill = new Bill();
+bill.addAmount(500);
+bill.addAmount(4500);
+console.log(bill.getTotal())
