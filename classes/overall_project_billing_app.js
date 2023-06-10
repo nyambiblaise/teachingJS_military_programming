@@ -28,3 +28,4 @@ class Bill{
         return this.getTotal()/this.getCount();
     }
 }
+const bill = new Bill();
