@@ -34,4 +34,19 @@ function getSubstring(someString,start,stop){
 function getFirstTenCharacters(someString){
     return someString.substring(0,10);
 }
-console.log(getSubstring(name));
+//multiline using interpolation
+function showInfo1() { //this will work, but using "" or '' won't work with multiline
+    return `hi guys, welcome
+    to JavaScript programming
+    and it is fun`;
+}
+function renderTableRow(value,label){
+    return `<tr>
+                <td>${label}</td>
+                <td>${value}</td>
+            </tr>`;
+}
+function capitalizeFirstLetter(word) {
+    return `${word[0].toUpperCase()}${word.substring(1).toLowerCase()}`;
+}
+console.log(capitalizeFirstLetter("jonAs"));
