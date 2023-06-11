@@ -31,8 +31,6 @@ class Bill{
 const bill = new Bill();
 bill.addAmount(500);
 bill.addAmount(4500);
-bill.addAmount(1500);
-bill.addAmount(4500);
 console.log(bill.getTotal())
 console.log(bill.getCount())
 console.log(bill.getAverage())

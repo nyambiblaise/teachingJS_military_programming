@@ -32,6 +32,9 @@ class Tasks{
         // return this.tasks.join(", ").toLowerCase();
     }
 }
-let task = new Tasks();
 let csv = "man,woman,pear,plumn";
+let task = new Tasks(csv);
 console.log(task.importCsv(csv));
+
+//displaying the last element in the array
+console.log(`Last element is ${task.getLast()}`);
