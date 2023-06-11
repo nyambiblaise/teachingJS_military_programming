@@ -16,7 +16,7 @@ function getLastCharacter(someString) {
     return someString[someString.length-1];
 }
 //different ways to handle strinfs
-function displayName1(xname) {
+function displayName1(xname) { // the ${x} is called string interpolation. ONLY used with ``
     return `Your name is ${xname}`;
 }
 function displayName2(xname) {
@@ -30,5 +30,8 @@ function displayName3(xname) {
 //indexEnd: the position of the first character you'd like to ignore
 function getSubstring(someString,start,stop){
     return someString.substring(1,5);
+}
+function getFirstTenCharacters(someString){
+    return someString.substring(0,10);
 }
 console.log(getSubstring(name));
