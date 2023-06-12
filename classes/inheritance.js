@@ -16,5 +16,5 @@ class Admin extends Employee{
     }
 }
 let go = new Admin("Richard","Ashu");
-go.paySalaries();
+//go.paySalaries();
 console.log(go.getInitials())
