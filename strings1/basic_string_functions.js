@@ -49,4 +49,4 @@ function renderTableRow(value,label){
 function capitalizeFirstLetter(word) {
     return `${word[0].toUpperCase()}${word.substring(1).toLowerCase()}`;
 }
-console.log(capitalizeFirstLetter("jonAs"));
+console.log(capitalizeFirstLetter("john doe"));
