@@ -1,7 +1,7 @@
 //forEach function
 let names = ["jude","joseph","peter","silas"];
 names.forEach(function (user) {
-    console.log(user)
+    console.log(user);
 })
 //MAP function: we want to map all elements to a new array and set all items to uppercase
 let newNames = names.map(function (n) {
