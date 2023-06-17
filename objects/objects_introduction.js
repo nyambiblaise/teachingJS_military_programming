@@ -1,4 +1,8 @@
-//used to store multiple values of diverse datatypes
+/*
+An object is a data type that allows you to group several variables together into one variable that contains keys and values. This is often used to represent or describe an entity. For example, a person, a user, a product, etc.
+used to store multiple values of diverse datatypes
+ */
+
 let person = {
     name:"john",
     lastName:"Ashu",
