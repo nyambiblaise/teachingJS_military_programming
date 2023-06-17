@@ -7,4 +7,18 @@ function getPositiveTemperatures(t) {
         return temperature > 0;
     })
 }
-console.log(getPositiveTemperatures(temps));
+function getPositiveTemperatures2(t) {
+    return t.filter( (temperature) => {
+        return temperature > 0;
+    })
+}
+console.log(getPositiveTemperatures2(temps));
+/*
+Complete the function getFreezingTemperatures such that it returns an array containing the freezing temperatures (the temperatures that are below 0).
+ */
+function getFreezingTemperatures(t) {
+    const temp = t.filter(function (temperature) {
+        return temperature<0;
+    });
+    return temp;
+}
