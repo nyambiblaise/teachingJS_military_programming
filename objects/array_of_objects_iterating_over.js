@@ -30,7 +30,7 @@ let listOfUsers = [
     },
     {
         firstName: "aicha",
-        lastName: "mohammadou",
+        lastName: "musa",
         isMale: false,
         age:19,
         hobbies:["laptops","reading","football","travel"],
