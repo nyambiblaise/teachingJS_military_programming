@@ -20,7 +20,7 @@ function convertStringToInt2(){
     //return Number.parseInt(phone,10);//0-9
     return Number.parseInt(phone,2);//binary
 }
-//The radix is the base of the numerical system that you'd like to use. For most use cases the radix you'd like to use is 10 which represents the way we count numbers in our everyday lives. This system is called the decimal system (because we have 10 fingers, so we use the digits from 0 to 9).
+//The radix is the base of the numerical system that you'd like to use. For most use cases the radix you'd like to use is 10 which represents the way we count 2_numbers in our everyday lives. This system is called the decimal system (because we have 10 fingers, so we use the digits from 0 to 9).
 console.log(convertStringToInt2())
 
 //a thirday way

@@ -21,7 +21,7 @@ function sumGrades(grades) {
     return sum;
 }
 console.log(sumGrades(grades));//should return 100
-//Complete the function sumPositiveNumbers such that it returns the sum of all positive numbers from the numbers parameter it receives.
+//Complete the function sumPositiveNumbers such that it returns the sum of all positive 2_numbers from the 2_numbers parameter it receives.
 function sumPositiveNumbers(numbers) {
     let s = 0;
     numbers.forEach(function (number) {
@@ -31,7 +31,7 @@ function sumPositiveNumbers(numbers) {
     });
     return s;
 }
-//Complete the function sumOddNumbers such that it returns the sum of all the odd numbers from the numbers parameter it receives.
+//Complete the function sumOddNumbers such that it returns the sum of all the odd 2_numbers from the 2_numbers parameter it receives.
 function sumOddNumbers(numbers) {
     let sum = 0;
     numbers.forEach(function (number) {

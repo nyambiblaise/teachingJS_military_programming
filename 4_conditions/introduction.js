@@ -1,5 +1,5 @@
 /*
-conditions are almost the same in all programming languages including JS.
+4_conditions are almost the same in all programming languages including JS.
 if (condition)
     statement(s)
 

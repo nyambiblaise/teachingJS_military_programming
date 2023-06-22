@@ -1,6 +1,6 @@
 let name = "John PaUL aSHu";
 let phone = 679194380;
-//counting numbers in a string
+//counting 2_numbers in a string
 function countString(someString) {
     return someString.length;
 }

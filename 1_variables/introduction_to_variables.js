@@ -8,4 +8,4 @@ console.log(age);
 console.log(salary);
 console.log(name);
 
-//MY POINT: Avoid using 'var' when defining variables. Use let or const instead.
+//MY POINT: Avoid using 'var' when defining 1_variables. Use let or const instead.

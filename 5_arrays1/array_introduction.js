@@ -1,5 +1,5 @@
 const users = []; // empty array
-const grades = [10, 8, 13, 15]; // array of numbers
+const grades = [10, 8, 13, 15]; // array of 2_numbers
 const names = ["Sam", "Alex"]; // array of strings
 const values = [10, false, "John"]; // mixed
 

@@ -11,7 +11,7 @@ function fiveCharactersOrFewerOnly(str) {
 console.log(fiveCharactersOrFewerOnly(words));
 
 /*
-Given an array of people objects, compelte the function peopleWhoBelongToAClub return a new array that has filtered out
+Given an array of people 6_objects, compelte the function peopleWhoBelongToAClub return a new array that has filtered out
  all those who don't belong to the club.
  */
 const people = [

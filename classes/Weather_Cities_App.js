@@ -1,7 +1,7 @@
 /*
 Complete the class WeatherCities by implementing the following instance methods:
-- getFirst which returns the first city from the cities instance variables
-- getLast which returns the last city from the cities instance variables
+- getFirst which returns the first city from the cities instance 1_variables
+- getLast which returns the last city from the cities instance 1_variables
 - exportCsv which returns a string containing the name of every city followed by the temperature in that city (separated by a space character). This should be a CSV string, meaning that every city and temperature group should be separated by a comma and a space character. For example, San Francisco 14, Amsterdam 4
 Note: the class is initialized with 1 argument: the cities array containing the weather report in multiple cities.
  */
