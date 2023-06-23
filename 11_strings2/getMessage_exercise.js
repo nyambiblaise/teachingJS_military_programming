@@ -14,3 +14,4 @@ const getMessage = (message) => {
 }
 console.log(getMessage("Hello world"));
 console.log(getMessage("Welcome to JS."));
+console.log(getMessage("Welcome to JS"));
