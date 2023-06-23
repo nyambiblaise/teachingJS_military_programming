@@ -5,3 +5,4 @@ const sentence = "Hello there. Welcome to JavaScript Programming!";
 const checkIfStringExists = (someString,search)=>someString.includes(search);
 
 console.log(checkIfStringExists(sentence,"java"));
+console.log(checkIfStringExists(sentence,"test"));
