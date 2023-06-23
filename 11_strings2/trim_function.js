@@ -18,4 +18,4 @@ const cleanFullNames = (someName)=>someName.trim();
 console.log(santizeEmail("paul@gmail.com "));
 console.log(santizeEmail(" joshu@gmail.com"));
 console.log(santizeEmail(" mary@gmail.com "));
-console.log(cleanFullNames(" John Paul "));
+console.log(cleanFullNames(" John Paul  "));
