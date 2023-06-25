@@ -9,6 +9,8 @@ Space characters should be replaced by dashes (-).
  */
 let str = `How To Become A Billionaire with 2k`;
 const getSlug = (someString) => {
-  return `https://www.example.com/blog/`+someString.replaceAll(" ","-");
+  let slug = someString.toLowerCase().replaceAll(" ","-");
+  const newSlug = slug.substring(0,15);
+  return `https://www.example.com/blog/`+newSlug;
 }
 console.log(getSlug(str));
