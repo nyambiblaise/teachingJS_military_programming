@@ -23,6 +23,6 @@ function sumAllMarks(user) {
     user.marks.forEach(function (s) {
         k = k + s
     })
-    return k
+    return k;
 }
 console.log(sumAllMarks(person));
