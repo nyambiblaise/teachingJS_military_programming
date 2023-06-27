@@ -25,4 +25,4 @@ function sumAllMarks(user) {
     })
     return k;
 }
-console.log(sumAllMarks(person));
+console.log(sumAllMarks(person))
