@@ -12,4 +12,4 @@ function getProductDetails() {
     products.inStock = true;
     return products;
 }
-console.log(getProductDetails());
+console.log(getProductDetails())
