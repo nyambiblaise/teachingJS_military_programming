@@ -18,7 +18,7 @@ function canVote(user){
 }
 console.log(canVote(person))
 function showPerson(p) {
-    console.log(p)
+    console.log(p);
 }
 showPerson(person)
 //reading object keys
