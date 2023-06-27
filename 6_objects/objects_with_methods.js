@@ -20,4 +20,4 @@ let person = {
 }
 console.log(person.canVote(person.age));
 console.log(person.getFullName());
-console.log(person.getSumOfMarks())
+console.log(person.getSumOfMarks());
