@@ -29,5 +29,5 @@ function exportCSV(allNames){
     let aN = allNames.join(",");
     return aN;
 }
-console.log(exportCSV(names))
+console.log(exportCSV(names));
 
