@@ -11,7 +11,7 @@ console.log(newNames)
 // returns an array of all the names where every name is in lower case.
 function lowerCaseNames(allNames) {
     return allNames.map(function (n) {
-        return n.toLowerCase()
+        return n.toLowerCase();
     })
 }
 console.log(lowerCaseNames(names))
