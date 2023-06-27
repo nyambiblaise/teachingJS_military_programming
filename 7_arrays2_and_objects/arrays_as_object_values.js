@@ -21,7 +21,7 @@ function getLastMark(user){
 function sumAllMarks(user) {
     let k = 0
     user.marks.forEach(function (s) {
-        k = k + s
+        k = k + s;
     })
     return k;
 }
