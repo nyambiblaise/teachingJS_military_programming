@@ -16,6 +16,6 @@ function exportLowerCasedCSV2(items) {
     let newItems = items.map(function (it) {
         return it.toLowerCase()
     });
-    return newItems.join(",")
+    return newItems.join(",");
 }
 console.log(exportLowerCasedCSV(listOfItems))
