@@ -19,7 +19,7 @@ function getLastMark(user){
 }
 //console.log(getFirstMark(person))
 function sumAllMarks(user) {
-    let k = 0;
+    let k = 0
     user.marks.forEach(function (s) {
         k = k + s
     })
