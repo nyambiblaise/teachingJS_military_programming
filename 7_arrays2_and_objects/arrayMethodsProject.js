@@ -18,4 +18,4 @@ function exportLowerCasedCSV2(items) {
     });
     return newItems.join(",");
 }
-console.log(exportLowerCasedCSV(listOfItems))
+console.log(exportLowerCasedCSV(listOfItems));
