@@ -72,7 +72,7 @@ function createArrayOfHobbies() {
 function findSumOfAllAges(){
     let sum = 0;
     let g = listOfUsers.forEach(function (s) {
-        sum = sum + s.age
+        sum = sum + s.age;
     });
     return sum;
 }
