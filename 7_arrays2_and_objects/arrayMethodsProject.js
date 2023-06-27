@@ -9,7 +9,7 @@ function addItem(items,item){
 function exportLowerCasedCSV(items){
     return items.map(function (it) {
         return it.toLowerCase()
-    }).join(",")
+    }).join(",");
 }
 //Without chaining
 function exportLowerCasedCSV2(items) {
