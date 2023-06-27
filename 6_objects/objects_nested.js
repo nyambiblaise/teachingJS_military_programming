@@ -26,7 +26,7 @@ let tweet = {
 function getFullNamesTweetOwner(user){
     return `${user.author.details.firstName} ${user.author.details.lastName}`;
 }
-console.log(getFullNamesTweetOwner(tweet))
+console.log(getFullNamesTweetOwner(tweet));
 
 //get movies watched
 console.log(person.moviesWatched)
