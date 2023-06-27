@@ -5,7 +5,7 @@ let listOfUsers = [
         firstName:"ashu",
         lastName:"mary",
         isMale: false,
-        age:10,
+        age:20,
         hobbies:["movies","food","internet"],
         getFullName:function () {
             return `${this.firstName} ${this.lastName}`;
