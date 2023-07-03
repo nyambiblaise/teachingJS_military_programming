@@ -1,4 +1,4 @@
-//Complete the function evenOrOdd such that it returns the string "even" when the number parameter it receives is even and "odd" otherwise.
+//Complete the function evenOrOdd such that it returns the string "even" when the number parameter it receives is even and "odd" otherwise..
 function evenOrOdd(n) {
     if(n%2===0)
         return "even";
