@@ -6,6 +6,6 @@ console.log(getNextAge(21));
 //Complete the function getBoxWidth such that it returns the width (as a number) from the string it receives.
 function getBoxWidth(width){
     return Number.parseInt(width,10);
-    //or
+    //orr
     return parseInt(width);
 }
