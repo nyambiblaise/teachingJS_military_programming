@@ -24,3 +24,8 @@ const html = `<ul>
     ${users.map(user=>`<li>${user.name}</li>`).join("")}
     </ul>`;
 console.log(html)
+
+let exportUsers = users => {
+    return users.map(user=>`<tr><td>${user[0]}</td><td>${user[1]}</td></tr>`).join("");
+}
+console.log(exportUsers(users))
