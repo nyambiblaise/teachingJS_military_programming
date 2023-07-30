@@ -7,3 +7,11 @@ const removeFirstApp = apps=>{
     return apps;
 }
 console.log(removeFirstApp(apps));
+
+//Complete the function removeSecondApp such that it removes the second element from the apps array it receives and returns the new array (which should not contain the item that was removed).
+
+const removeSecondApp = listOfApps => {
+    listOfApps.splice(1,1);
+    return listOfApps;
+}
+console.log(removeSecondApp(apps));
