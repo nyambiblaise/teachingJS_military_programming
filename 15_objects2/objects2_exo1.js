@@ -5,5 +5,7 @@ const settings = {
     betaVersion:false
 };
 const keys = Object.keys(settings);
-
+keys.forEach(function (key) {
+    console.log(settings[key]);
+})
 console.log(keys);
