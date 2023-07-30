@@ -13,3 +13,21 @@ let sumOfGrades = grades.reduce((total,current)=>{
     return total + current;
 },0);
 console.log(sumOfGrades);
+
+//Complete the function such that it returns the sum of the numbers it receives as a parameter.
+// use implicit functions and normal functions
+
+//method 1
+let sum1 = grades.reduce((total,current)=>{
+    return total+current;
+});
+console.log(sum1);
+
+//method2
+const sum2 = someGrades=>{
+    let s = someGrades.reduce((total,current)=>{
+        return total + current;
+    });
+    return s;
+}
+console.log(sum2(grades));
