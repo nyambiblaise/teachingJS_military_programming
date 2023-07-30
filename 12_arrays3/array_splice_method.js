@@ -3,5 +3,5 @@ const names =["john","mary","judas","peter","silas"];
 
 //displaying all the members
 let allNames = names=>{
-    return names.reduce()
+    return names.reduce();
 }
