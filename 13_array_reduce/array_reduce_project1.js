@@ -31,3 +31,12 @@ const sum2 = someGrades=>{
     return s;
 }
 console.log(sum2(grades));
+
+//Complete the function multiplyNumbers such that it multiplies every number from the numbers parameter it receives.
+let multiplyNumbers = someNumbers=>{
+    let product = someNumbers.reduce((t,p)=>{
+        return t*p;
+    },1);
+    return product;
+}
+console.log(multiplyNumbers(grades));
