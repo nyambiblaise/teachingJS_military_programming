@@ -1,4 +1,4 @@
-//The array of 6_objects is the most common data structure you will use in your development career. That's because it allows us to represent a list of entities from the real world.
+//The array of 6_objects1 is the most common data structure you will use in your development career. That's because it allows us to represent a list of entities from the real world.
 //we use the [] in this case
 let listOfUsers = [
     {

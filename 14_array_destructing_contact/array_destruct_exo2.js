@@ -16,8 +16,13 @@ let person = {
     name:"john",
     age:30
 };
-let showPersonInfo = somePerson => {
+function showSingleUser(somePerson) {
     let [name,age,isAdmin=false] = somePerson;
     return `Name: ${name}, Age: ${age}, isAdmin: ${isAdmin}`;
 }
-console.log(showPersonInfo(person));
+let showPersonInfo = person => {
+    let [name,age,isAdmin=false] = person;
+    return `Name: ${name}, Age: ${age}, isAdmin: ${isAdmin}`;
+}
+console.log(showSingleUser(person));
+//you can remove it ouf of the function...
