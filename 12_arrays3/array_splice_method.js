@@ -24,4 +24,4 @@ console.log(resetApps(apps))
 const resetAllApps = apps=>{
     return apps.splice(0,apps.length);
 }
-//console.log(resetAllApps(apps));
+console.log(resetAllApps(apps));
