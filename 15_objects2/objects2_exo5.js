@@ -10,6 +10,8 @@ let courses = {
 };
 let logValues = courses =>{
     let key = Object.keys(courses);
-    console.log(courses[key]);
+    key.forEach(someKey=>{
+        console.log(courses[someKey]);
+    })
 }
 logValues(courses);
