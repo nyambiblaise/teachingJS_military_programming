@@ -12,3 +12,4 @@ const user = {
 let getFullName = (someUser)=>{
     return `${someUser.info.name??"N/A"}`;
 }
+console.log(getFullName(user))
