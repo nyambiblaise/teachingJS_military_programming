@@ -6,7 +6,7 @@ const userLocation = {
     lng: 2.5734,
 };
 let getLatLng = someLocation=>{
-    const [lat,lng] = someLocation;
+    const {lat,lng} = someLocation;
     return `Longitude is ${lng} and Latitude is ${lat}`;
 }
 console.log(getLatLng(userLocation));
