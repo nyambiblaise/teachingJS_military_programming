@@ -1,5 +1,8 @@
 /*
 Just like array destructuring, you can destructure key/value pairs (or nested objects) from an object. The concept is similar, except that you have to use {} instead of [] on the left side of the = operator and you should have an object on the right side of the = operator.
+
+NOTE:
+With destructing, we use {} AND NOT []
  */
 const config = {
     id: 1,
