@@ -12,5 +12,6 @@ const user = {
     },
     data: null
 }
-const uName = user.details.name.firstName; //same
-console.log(uName);
+const fName = user.details.name.firstName; //sam
+const lName = user.details.name?.lastName; //undefined
+console.log(lName);
