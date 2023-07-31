@@ -12,3 +12,10 @@ const sum = values => {
 sum([2, 3]); // 5
 sum([]); // NaN
 sum([]); // NaN
+
+/*
+Recap
+Optional chaining can be used for arrays. The syntax is ?.[index]
+Optional chaining can be used for functions. The syntax is functionName?.()
+Optional chaining cannot be used for assignment. It's only used for reading.
+ */
