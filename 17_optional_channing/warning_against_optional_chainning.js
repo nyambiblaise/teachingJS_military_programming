@@ -1,0 +1,14 @@
+/*
+Do not overuse optional chaining
+You might be tempted to start using optional chaining instead of every dot notation but you shouldn't. Over-using it may lead to unexpected bugs and poor code quality.
+You can think of it as the following: When I (or other programmers) see ?. in the code, it means that there's a moderate chance that the value returns undefined. In turn, this means that we should be handling the case when it returns undefined.
+
+For example, the below code does not handle many cases, such as an empty array:
+ */
+const sum = values => {
+    return values?.[0] + values?.[1];
+}
+
+sum([2, 3]); // 5
+sum([]); // NaN
+sum([]); // NaN
