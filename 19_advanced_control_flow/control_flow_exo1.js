@@ -29,7 +29,7 @@ const getStatus = (host, user, booking) =>{
         canceled:`Unfortunately ${user}, ${host} has canceled your booking request.`,
         done:`${host} hopes you had a great stay.`
     };
-    return someBooking[booking]??"Unknown booking status";
+    return someBooking[booking.status]??"Unknown booking status";
 }
-console.log(getStatus("John Host","Mary User",booking1.status));
-console.log(getStatus("John Host","Mary User",booking2.status));
+console.log(getStatus("John Host","Mary User",booking1));
+console.log(getStatus("John Host","Mary User",booking2));
