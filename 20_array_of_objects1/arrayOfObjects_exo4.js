@@ -10,11 +10,15 @@ const users = [
     },
     {
         name:"jonas",
-        age:20
+        age:10
     }
 ];
 const getAverageAge = someArray => {
     let nbofUsers = someArray.length;
-    return nbofUsers;
+    let sum = 0;
+    someArray.forEach(t=>{
+        sum = sum + t.age;
+    })
+    return sum/nbofUsers;
 }
 console.log(getAverageAge(users));
