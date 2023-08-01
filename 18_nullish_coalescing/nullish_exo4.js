@@ -3,7 +3,11 @@ Complete the function getFullName such that it returns the full name in lower ca
  */
 const user = {
     info:{
-        name:"john",
+        name:"jOHn",
         age:19
     }
 };
+const getFullName = someUser=>{
+    return `${someUser.info?.name.toLowerCase()??"user"}`;
+}
+console.log(getFullName(user))
