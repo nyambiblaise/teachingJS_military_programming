@@ -9,10 +9,21 @@ const grades = [
     },
     {
         date:"2023-08-01 10:21",
-        grade:10
+        grade:18
     }
 ]
-const getSumofGrades = someGrades=>{
-
+const getSumofGrades1 = someGrades=>{
+    let sum = someGrades.reduce((total,current)=>{
+       return total.grade + current.grade;
+    });
+    return sum;
 }
-console.log(getSumofGrades(grades));
+const getSumOfGrades2 = someGrades=>{
+    let s = 0;
+    someGrades.forEach(result=>{
+        console.log(result)
+        s = s + result.grade;
+    });
+    return s;
+}
+console.log(getSumOfGrades2(grades));
