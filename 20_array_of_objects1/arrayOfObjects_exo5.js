@@ -33,7 +33,7 @@ const users = [
 const getTotalSales = someUser=>{
     let sum = 0;
     someUser.forEach(t=>{
-        //sum += t.subscription?.info?.value??0; //OR the lin below
+        //sum += t.subscription?.info?.value??0; //OR the line below
         sum = sum + (t.subscription?.info?.value??0);
     })
     return sum;
