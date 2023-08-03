@@ -20,4 +20,4 @@ const tweets = [
 const getTweets = allTweets=>{
     return allTweets.map(allTweets => allTweets.message);
 }
-console.log(getTweets(tweets).message);
+console.log(getTweets(tweets));
