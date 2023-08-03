@@ -35,27 +35,41 @@ const tweets = [
         message: "This is awesome, man!!!",
         stats: {
             likes: 50,
-            retweets: 3
+            retweets: 0
         }
     }
 ];
-//1 - Sort all tweets with more than 30 likes
+/*1 - Sort all tweets with more than 30 likes
+Calling the .filter() method on an array of objects will return an array containing the objects that pass the condition you specify in the callback.
+ */
 const getTweetsMoreThan30Likes = someTweets =>{
     return someTweets.filter(t=>t.stats.likes>30);
 }
-//console.log(getTweetsMoreThan30Likes(tweets));
+console.log(getTweetsMoreThan30Likes(tweets));
 
-//2 - Search for a tweet with id 40941
+/*2 - Search for a tweet with id 40941
+Calling the .find() method on an array of objects will return the first object that matches the condition you specify in the callback, or undefined if no objects satisfy the condition.
+ */
 const search = 40941;
 const findTweetById = (searchID)=>{
     return tweets.find(tweet=>tweet.id===searchID);
 }
-//console.log(findTweetById(search));
+console.log(findTweetById(search));
 
-//3 - Check if some tweets have had more than x likes
+/*3 - Check if some tweets have had more than x likes
+Calling the .some() method on an array of objects will return true when at least one item in the array satisfies the condition you specified in the callback. Otherwise, it returns false.
+ */
 const checkIfHugeRetweets = (nbOfLikes)=>{
     return tweets.some(t => t.stats.likes >= nbOfLikes);
 }
-//console.log(checkIfHugeRetweets(10)); //true cause there is a tweet with >10 likes
-//console.log(checkIfHugeRetweets(50)); //true cause there is a tweet with >=50 likes
+console.log(checkIfHugeRetweets(10)); //true cause there is a tweet with >10 likes
+console.log(checkIfHugeRetweets(50)); //true cause there is a tweet with >=50 likes
 console.log(checkIfHugeRetweets(54)); //false cause there is no tweet with >=54 likes
+
+/*4 - Check if every tweet has at least one retweet
+Calling the .every() method on an array of objects will return true when every item in the array satisfies the condition you specified in the callback. Otherwise, it returns false.
+ */
+const checkIfTweetHasRetweet = ()=>{
+    return tweets.every(t => t.stats.retweets >0);
+}
+console.log(checkIfTweetHasRetweet())
