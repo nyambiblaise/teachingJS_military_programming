@@ -10,8 +10,6 @@ const sampleUsers = [{
     isVerified: true
 }];
 const exportVerifiedUsers = ()=>{
-    return sampleUsers.map(users=>{
-        return users.name;
-    }).join(",");
+    return sampleUsers.filter(users=> users.isVerified).map(users=>users.name).join(",");
 }
 console.log(exportVerifiedUsers(sampleUsers))
