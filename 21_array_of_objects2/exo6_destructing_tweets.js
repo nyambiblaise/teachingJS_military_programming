@@ -20,7 +20,7 @@ const tweets = [
 const destructTweet = ()=>{
     tweets.forEach(t=>{
         const {likes, retweets} = t.stats;
-        return {likes,retweets};
+        console.log({likes,retweets});
     })
 }
-console.log(destructTweet());
+destructTweet();
