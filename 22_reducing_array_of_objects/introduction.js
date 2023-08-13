@@ -27,3 +27,4 @@ const calcSum = (x)=>x.reduce((total,current)=>{
     return total + current.grade;
 },0);
 console.log(calcSum(grades))
+//This means that the current variable will be an object instead of a number. Thus, we'll have to extract the grade out of it by writing current.grade. This can be visualized by adding a console.log(current) inside the .reduce() callback.
