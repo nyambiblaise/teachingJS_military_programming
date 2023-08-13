@@ -28,3 +28,13 @@ const calcSum = (x)=>x.reduce((total,current)=>{
 },0);
 console.log(calcSum(grades))
 //This means that the current variable will be an object instead of a number. Thus, we'll have to extract the grade out of it by writing current.grade. This can be visualized by adding a console.log(current) inside the .reduce() callback.
+
+
+/*
+RECAP
+Arrays of objects can be reduced into a single value (most commonly a number).
+The main difference is that current becomes an object. So make sure to log it to the console to visualize it.
+The 2nd argument of the reduce is the starting value for the total parameter.
+The starting value for a sum is 0.
+The starting value for a product (multiplication) is 1.
+ */
