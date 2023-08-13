@@ -23,7 +23,7 @@ const grades = [
     grade: 30
     }
 ];
-const calcSum = grades.reduce((total,current)=>{
+const calcSum = (x)=>x.reduce((total,current)=>{
     return total + current.grade;
 },0);
-console.log(calcSum)
+console.log(calcSum(grades))
