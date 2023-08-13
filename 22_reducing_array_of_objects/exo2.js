@@ -15,7 +15,9 @@ const sampleGroups = [{
         public: false
     }
 }];
-const sumMsg = (x) => x.reduce((total,current)=>{
-   return total + current.details.messageCount;
-},0);
-console.log(sumMsg(sampleGroups))
+const sumMessage = x => {
+    return x.reduce((total,current)=>{
+        return total + current.details.messageCount;
+    },0)
+}
+console.log(sumMessage(sampleGroups))
