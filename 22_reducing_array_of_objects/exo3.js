@@ -11,4 +11,4 @@ const findTotal = (items) => {
       return total + (current.price * current.quantity);
   },0)
 }
-console.log()
+console.log(findTotal(sampleProducts))
