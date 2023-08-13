@@ -20,6 +20,7 @@ const tweet = [
     }
 ];
 const findSumTweetsLikes = (x)=>x.reduce((total, current)=>{
-   return total + current.stats.likes + current.stats.likes
-});
+    console.log(current)
+   return total + current.stats.likes + current.stats.tweets
+},0);
 console.log(findSumTweetsLikes(tweet));
