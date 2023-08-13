@@ -9,3 +9,4 @@ const findProducts = (x) => {
       return t * c.value;
   },1);
 }
+console.log(findProducts(sampleRecordings))
