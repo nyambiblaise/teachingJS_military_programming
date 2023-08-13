@@ -8,9 +8,7 @@ The most common use cases of reduce are sum & multiplication .
 
  */
 let numbers = [10,20,30];
-const findSum = ()=>{
-    return numbers.reduce((total, current)=>{
-        return total + current;
-    })
-}
-console.log(findSum());
+const findSum = numbers.reduce((total,current)=>{
+    return total + current;
+})
+console.log(findSum);
