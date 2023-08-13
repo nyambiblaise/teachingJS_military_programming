@@ -5,4 +5,5 @@
 The reduce() method is used to calculate a single value from an array. In other terms, the reduce() method reduces
  an array into a single value.
 The most common use cases of reduce are sum & multiplication .
+
  */
