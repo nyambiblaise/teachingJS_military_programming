@@ -13,3 +13,4 @@ try{
 }catch (e) {
     console.log(`Something went wrong ${e}`)
 }
+//the above code will show an error and get the exact error because it was caught.
