@@ -1,24 +1,25 @@
 const tweet = [
     {
         id:98313,
-        status:{
-            likes:9811,
-            tweets:91831
+        stats:{
+            likes:1,
+            tweets:2
         }
     },{
         id:1314,
-        status: {
-            likes:09284,
-            tweets:9674
+        stats: {
+            likes:3,
+            tweets:4
         }
     },{
     id:56242,
-        status: {
-        tweets: 564724,
-            likes: 13131
+        stats: {
+        tweets: 5,
+            likes: 6
         }
     }
 ];
 const findSumTweetsLikes = (x)=>x.reduce((total, current)=>{
-   return
+   return total + current.stats.likes + current.stats.likes
 });
+console.log(findSumTweetsLikes(tweet));
