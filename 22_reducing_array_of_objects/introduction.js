@@ -12,3 +12,18 @@ const findSum = numbers.reduce((total,current)=>{
     return total + current;
 })
 console.log(findSum);
+//the above method is for an array, let's look at an array of objects
+const grades = [
+    {
+        grade:10
+    },
+    {
+        grade:30
+    },{
+    grade: 30
+    }
+];
+const calcSum = grades.reduce((total,current)=>{
+    return total + current.grade;
+},0);
+console.log(calcSum)
