@@ -17,3 +17,14 @@ obj1.key = "something";
 const obj2 = new Object();
 obj2.key = "something";
 obj1 === obj2; //false
+
+/*
+This should make the reason why they're not equal a bit clearer.
+new Array() creates a new instance of array.
+Every time you call new Array() you get a new instance, which means new Array() is certainly not the same as new Array() because they both are different instances.
+
+So with Arrays & Objects, we need another approach for comparing equality from a values perspective.
+As in, we expected [] === [] to be true because they are both empty arrays, but the way JavaScript works is different as it's checking if they are the same instance.
+
+
+ */
