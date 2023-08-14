@@ -1,9 +1,20 @@
-//Complete the function incrementAge such that it adds 1 to the current age from the user parameter it receives.
-const sampleUser = {
+//A user is verifying their email on your website. We've got an array of users, and the id of the user that's verifying their email. Set the isVerified field to true for that user.
+const users = [{
     id: 1,
-    age: 23
-};
-const incrementAge = user => {
+    name: "Sam",
+    isVerified: false
+}, {
+    id: 2,
+    name: "Alex",
+    isVerified: false
+}, {
+    id: 3,
+    name: "Charlie",
+    isVerified: false
+}];
+const verifyUser = (users, userId) => {
 
 }
-console.log(incrementAge(sampleUser));
+
+verifyUser(users, 2);
+console.log(users);
