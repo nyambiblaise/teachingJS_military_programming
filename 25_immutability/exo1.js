@@ -14,8 +14,10 @@ const users = [{
     isVerified: false
 }];
 const verifyUser = (users, userId) => {
-    return users.find((users)=> users.id === userId)
+    const user = users.find((users)=> users.id === userId);
+    if(user){
+        user.isVerified=true;
+    }
+    return users;
 }
-
-//verifyUser(users, 2);
-console.log(verifyUser(users, 3));
+console.log(verifyUser(users, 1));
