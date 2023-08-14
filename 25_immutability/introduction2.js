@@ -26,5 +26,12 @@ Every time you call new Array() you get a new instance, which means new Array() 
 So with Arrays & Objects, we need another approach for comparing equality from a values perspective.
 As in, we expected [] === [] to be true because they are both empty arrays, but the way JavaScript works is different as it's checking if they are the same instance.
 
+Recap
+Arrays are objects in JavaScript.
+[] === [] is the same as new Array() === new Array()
+{} === {} is the same as new Object() === new Object()
+[] === [] is false because it's comparing 2 different instances of arrays
+{} === {} is false because it's comparing 2 different instances of objects
+When you assign a variable to an object or array, it does NOT copy it. It will only reference its value.
 
  */
