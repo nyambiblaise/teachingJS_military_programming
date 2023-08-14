@@ -4,5 +4,6 @@ This means that the original array should not be modified.
  */
 const originalApps = ["Calculator", "Phone"];
 const addApp = (apps,app)=>{
-
+    return [...apps,app];
 }
+console.log(addApp(originalApps,"Whatsapp"))
