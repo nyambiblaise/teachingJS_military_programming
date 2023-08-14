@@ -1,3 +1,7 @@
+/*
+An instance variable is a variable that belongs to a specific instance of a class.
+An instance variable is accessible in any instance method. Also, instance variables don't necessarily have to be created by capturing a constructor parameter. For example:
+ */
 class User{
     constructor(firstName,lastName,age) {
         this.myAge = age;
