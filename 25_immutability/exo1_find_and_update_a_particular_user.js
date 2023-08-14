@@ -21,3 +21,10 @@ const verifyUser = (users, userId) => {
     return users;
 }
 console.log(verifyUser(users, 1));
+
+
+
+
+
+
+
