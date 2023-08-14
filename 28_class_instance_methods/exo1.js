@@ -15,8 +15,7 @@ class User{
         return `${this.status}. ${this.firstName} ${this.lastName}`
     }
     canVote(){
-        if(this.age>=18)
-            return true;
+        return this.age>=18
     }
 }
 const newUser = new User("Mary","Ashu","Mrs",90);
