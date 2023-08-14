@@ -1,4 +1,5 @@
-//A user is verifying their email on your website. We've got an array of users, and the id of the user that's verifying their email. Set the isVerified field to true for that user.
+//A user is verifying their email on your website. We've got an array of users, and the id of the user that's
+// verifying their email. Set the isVerified field to true for that user.
 const users = [{
     id: 1,
     name: "Sam",
@@ -13,8 +14,8 @@ const users = [{
     isVerified: false
 }];
 const verifyUser = (users, userId) => {
-
+    return users.find((users)=> users.id === userId)
 }
 
-verifyUser(users, 2);
-console.log(users);
+//verifyUser(users, 2);
+console.log(verifyUser(users, 3));
