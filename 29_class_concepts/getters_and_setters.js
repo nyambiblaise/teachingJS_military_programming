@@ -3,7 +3,7 @@ You can still use getters and setters with the pattern where you capture constru
  */
 class User2{
     constructor(myAge) {
-        this.myAge = myAge;
+        this._myAge = myAge;
     }
     set setAge(someAge){
         this._myAge = someAge;
@@ -13,5 +13,5 @@ class User2{
     }
 }
 const user = new User2(10);
-user.setAge = 14;
+//user.setAge = 14;
 console.log(user.getAge);
