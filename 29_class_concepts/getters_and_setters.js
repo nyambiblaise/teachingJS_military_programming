@@ -12,3 +12,6 @@ class User2{
         return this._myAge;
     }
 }
+const user = new User2(10);
+user.setAge = 14;
+console.log(user.getAge);
