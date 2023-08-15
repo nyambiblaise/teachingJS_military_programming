@@ -6,5 +6,10 @@ class Task{
     constructor(todos) {
         this._todos = todos;
     }
-
+    get myTodos(){
+        return this._todos.map(someList).join(",");
+    }
 }
+const apps = ["whataspp","google","facebook"];
+const task = new Task(apps);
+console.log(task.myTodos);
