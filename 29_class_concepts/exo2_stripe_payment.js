@@ -6,5 +6,15 @@ Update the class Payment to set an internal instance variable called _cents that
 Note that we do check the value of _cents in the tests to make sure you've followed the requirements of the challenge.
  */
 class Payment{
-
+    constructor(amount) {
+        this._amount = amount;
+    }
+    set setAmount(a){
+        this._amount = a;
+    }
+    get getAmount(){
+        return this._amount*100;
+    }
 }
+const payment = new Payment(10);
+console.log(payment.getAmount);
