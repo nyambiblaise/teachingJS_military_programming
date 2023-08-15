@@ -9,3 +9,6 @@ class User{
         this._age = Number.parseInt(value,10);
     }
 }
+let user = new User();
+user.age = 15;
+console.log(user)
