@@ -7,7 +7,7 @@ class Task{
         this._todos = todos;
     }
     get myTodos(){
-        return this._todos.map(someList).join(",");
+        return this._todos.join(",");
     }
 }
 const apps = ["whataspp","google","facebook"];
