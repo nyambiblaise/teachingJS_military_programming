@@ -10,7 +10,7 @@ class User{
     }
 }
 let user = new User();
-user.age = 15;
+user.age = "15";
 console.log(user)
 
 /*
