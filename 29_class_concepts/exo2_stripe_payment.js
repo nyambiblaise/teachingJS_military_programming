@@ -9,6 +9,7 @@ class Payment{
     constructor(amount) {
         this._amount = amount;
     }
+
     set setAmount(a){
         this._amount = a;
     }
