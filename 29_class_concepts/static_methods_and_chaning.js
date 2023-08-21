@@ -42,4 +42,4 @@ Notice how we call setGrade(40) on the result of .markAsCompleted(). Similarly, 
 console.log("\n METHOD CHAINING");
 console.log(course.markAsComplicated().setGrade(10).requestCertificate());
 
-//NOTE: Method chaining is possible when the instance method returns this.
+//NOTE: Method chaining is possible when the instance method returns this
