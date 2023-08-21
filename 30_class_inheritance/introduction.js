@@ -17,6 +17,9 @@ class Employee{
     }
 }
 class Manager extends Employee{
+    getFullNames() {
+        return `${this.fName} ${this.lName} (Manager)`;
+    }
     deleteEmployee(employeeName){
         return `Employee with name ${employeeName} has been deleted`;
     }
@@ -24,3 +27,9 @@ class Manager extends Employee{
 const manager = new Manager("joshua","silas",90);
 console.log(manager.getFullNames());
 console.log(manager.getInitials());
+
+/*
+Overriding methods:
+Method overriding is the concept whereby a method is overriden by the base class into the parent class.
+What if we'd like a different implementation for getFullName()? For example, we'd like to return (manager) after the full name. This is possible in inheritance. You can override functions. Here's how:
+ */
