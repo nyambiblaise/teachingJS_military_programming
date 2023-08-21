@@ -12,4 +12,13 @@ class Employee{
     getFullNames(){
         return `${this.fName} ${this.lName};`
     }
+    getInitials(){
+        return `${this.fName[0].toUpperCase()} ${this.lName[0].toUpperCase()}`;
+    }
 }
+class Manager extends Employee{
+    deleteEmployee(employeeName){
+        return `Employee with name ${employeeName} has been deleted`;
+    }
+}
+const manager = new Manager();
