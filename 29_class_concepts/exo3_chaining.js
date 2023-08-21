@@ -18,4 +18,5 @@ class BookSale {
         return this;
     }
 }
-console.log();
+const sales = new BookSale();
+console.log(sales.setStudentDiscount().setCurrency("EUR").applyDiscount(10));
