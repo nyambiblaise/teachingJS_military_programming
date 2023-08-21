@@ -8,9 +8,9 @@ class Rectangle {
         this.height = height;
     }
 
-    isSquare() {
+    static isSquare() {
         return this.width === this.height;
     }
 }
 //In fact, if you ask JavaScript about the type of Rectangle, you'll get function:
-console.log(typeof(Rectangle));
+console.log(typeof(Rectangle.isSquare()));
