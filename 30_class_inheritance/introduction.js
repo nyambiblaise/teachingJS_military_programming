@@ -21,4 +21,6 @@ class Manager extends Employee{
         return `Employee with name ${employeeName} has been deleted`;
     }
 }
-const manager = new Manager();
+const manager = new Manager("joshua","silas",90);
+console.log(manager.getFullName());
+console.log(manager.getInitials());
