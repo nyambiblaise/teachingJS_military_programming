@@ -19,14 +19,14 @@ class Course{
         return this.status;
     }
     setGrade(g){
-        return this.grade = `Grade is ${g}`;
+        return this.grade;
     }
     requestCertificate(){
-        return this.certificate = `Certificate is Requested`;
+        return this.certificate;
     }
 }
 //with chaining, it is possible to do....
-const course = new Course();
+const course = new Course("Completed",90,"Certificate has been requested");
 course.markAsComplicated();
 course.setGrade(40);
 course.requestCertificate();
