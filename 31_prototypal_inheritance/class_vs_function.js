@@ -16,7 +16,11 @@ class Rectangle {
 console.log(typeof(Rectangle.isSquare()));
 ///Before the class keyword was added to the language in 2015, here's how we used to write "classes":
 
-function Rectangle1(width, height) {
+function Rectangle1(length, width) {
     this.width = width;
-    this.height = height;
+    this.length = length;
+}
+//If line 19 is how you write a class using the function constructor pattern, then how do you add a custom method?
+Rectangle1.prototype.isArea() = function () {
+    return this.width * this.height;
 }
