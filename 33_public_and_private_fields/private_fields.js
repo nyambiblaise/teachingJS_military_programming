@@ -3,19 +3,24 @@
 class User{
     #age = 16; //private
     name = "Paul"; //public
+
+    showAge(){
+        return this.#age;
+    }
 }
 const user = new User();
 console.log(user.age); //undefined because age is private
 console.log(user.name);
+console.log(user.showAge());
 
 class Human{
     #firstName;
     constructor() {
-        this.#firstName = "JONES";
+        this.#firstName = "JONES"; //works
     }
 }
 class Person{
     constructor() {
-        this.#firstName = "Judas"; //error here...
+        //this.#firstName = "Judas"; //error here...
     }
 }
