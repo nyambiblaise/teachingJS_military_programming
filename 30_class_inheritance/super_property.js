@@ -8,7 +8,7 @@ class Employee{
         this.age = age;
     }
     getFullNames(){
-        return `${this.fName} ${this.lName};`
+        return `${this.fName} ${this.lName}`
     }
     getInitials(){
         return `${this.fName[0].toUpperCase()}${this.lName[0].toUpperCase()}`;
@@ -34,10 +34,15 @@ class Manager extends Employee{
     deleteEmployee(employeeName){
         return `Employee with name ${employeeName} has been deleted`;
     }
+    //WE can also use the super to call a method directly in the parent class
+    displayFullNames(){
+        return super.getFullNames();
+    }
 }
 const manager = new Manager("joshua","silas","IT");
 console.log(manager.getFullNames());
 console.log(manager.getInitials());
+console.log(manager.displayFullNames());
 
 /*
 NOTE:
