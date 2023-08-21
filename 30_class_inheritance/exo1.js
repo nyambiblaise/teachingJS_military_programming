@@ -22,6 +22,18 @@ admin.updateConfig(); // "Config updated"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //SOLUTION
 class User{
     constructor(fname,lname,age){
