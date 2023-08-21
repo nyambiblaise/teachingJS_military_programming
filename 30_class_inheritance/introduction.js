@@ -31,5 +31,6 @@ console.log(manager.getInitials());
 /*
 Overriding methods:
 Method overriding is the concept whereby a method is overriden by the base class into the parent class.
-What if we'd like a different implementation for getFullName()? For example, we'd like to return (manager) after the full name. This is possible in inheritance. You can override functions. Here's how:
+What if we'd like a different implementation for getFullName()? For example, we'd like to return (manager) after the
+ full name. This is possible in inheritance. You can override functions. Check line 20 above.
  */
