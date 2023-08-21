@@ -27,5 +27,10 @@ course.setGrade(40);
 course.requestCertificate();
 
 //with method chaining, it becomes this...
+/*
+Notice how we call setGrade(40) on the result of .markAsCompleted(). Similarly, we call .requestCertificate() on the
+ result of setGrade(40).
+ For this to work, these instance methods should always return this. The reference to the current instance. By doing so, you are able to call other methods on the instance because they're returning the current instance.
+ */
 console.log("\n METHOD CHAINING");
 course.markAsComplicated().setGrade(10).requestCertificate();
