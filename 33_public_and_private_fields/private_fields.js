@@ -7,3 +7,15 @@ class User{
 const user = new User();
 console.log(user.age); //undefined because age is private
 console.log(user.name);
+
+class Human{
+    #firstName;
+    constructor() {
+        this.#firstName = "JONES";
+    }
+}
+class Person{
+    constructor() {
+        this.#firstName = "Judas"; //error here...
+    }
+}
