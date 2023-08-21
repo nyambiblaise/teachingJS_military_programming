@@ -21,14 +21,15 @@ function Rectangle1(length, width) {
     this.length = length;
 }
 //If line 19 is how you write a class using the function constructor pattern, then how do you add a custom method?
-Rectangle1.prototype.isArea() = function () {
-    return this.width * this.height;
+Rectangle1.prototype.isArea = function () {
+    return this.width * this.length;
 }
 /*
 You can think of the prototype as an object that contains all the instance methods that a certain function can have. This prototype is linked in what we call the prototype chain. This is explained in the next lesson.
 
 So by assigning a new function to Rectangle.prototype you are adding a new instance method to the instances of Rectangle.
-That means, every time you create a new Rectangle, that instance will have an instance method called isSquare which can access the instance properties via this. (for example, this.width and this.height).
+That means, every time you create a new Rectangle, that instance will have an instance method called isSquare which can access the instance properties via this. (for example, this.width and this.length).
 
 Again, the syntax is not the best, but there is a reason behind it, which you'll learn about in the next lesson!
  */
+console.log(new Rectangle1(10,4).isArea());
