@@ -6,3 +6,15 @@ class Student{
     }
 }
 Student.showInfo();
+
+//Method chaining
+// You may sometimes encounter method chaining, which is a method called on the result of another method. For example, assuming a class Course:
+class Course{
+    markAsComplicated(){
+        return `Completed`;
+    }
+    set setGrade(g){
+        this.g = g;
+    }
+
+}
