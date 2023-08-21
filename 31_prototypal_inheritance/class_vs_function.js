@@ -14,3 +14,9 @@ class Rectangle {
 }
 //In fact, if you ask JavaScript about the type of Rectangle, you'll get function:
 console.log(typeof(Rectangle.isSquare()));
+///Before the class keyword was added to the language in 2015, here's how we used to write "classes":
+
+function Rectangle1(width, height) {
+    this.width = width;
+    this.height = height;
+}
