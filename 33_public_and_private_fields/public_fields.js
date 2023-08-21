@@ -1,4 +1,5 @@
 //Public class fields allows you to define instance variables on a class without having to override the constructor.
+//public class members can be accessed by anyone
 class User{
     constructor() {
         this.age = 10;
