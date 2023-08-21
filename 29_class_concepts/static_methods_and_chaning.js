@@ -11,10 +11,17 @@ Student.showInfo();
 // You may sometimes encounter method chaining, which is a method called on the result of another method. For example, assuming a class Course:
 class Course{
     markAsComplicated(){
-        return `Completed`;
+        console.log(`Completed`);
     }
-    set setGrade(g){
-        this.g = g;
+    setGrade(g){
+        console.log(`Grade is ${g}`);
     }
-
+    requestCertificate(){
+        console.log(`Certificate is Requested`);
+    }
 }
+//with chaining, it is possible to do....
+const course = new Course();
+course.markAsComplicated();
+course.setGrade(40);
+course.requestCertificate();
