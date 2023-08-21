@@ -25,3 +25,7 @@ const course = new Course();
 course.markAsComplicated();
 course.setGrade(40);
 course.requestCertificate();
+
+//with method chaining, it becomes this...
+console.log("\n METHOD CHAINING");
+course.markAsComplicated().setGrade(10).requestCertificate();
