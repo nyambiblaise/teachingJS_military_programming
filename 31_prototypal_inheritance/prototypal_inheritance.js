@@ -11,5 +11,7 @@ Prototypal inheritance is here to solve the problem in traditional inheritance w
  - sleep()
  - eat()
 
-
+Banana
+- peel()
+- grow()
  */
