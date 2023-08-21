@@ -4,4 +4,8 @@ class BookSale {
         this.currency = "usd";
         this.isStudent = false;
     }
+    applyStudentDiscount(discountValue){
+        this.discount = this.amount - ((discountValue/100) * this.amount) ;
+        return this;
+    }
 }
