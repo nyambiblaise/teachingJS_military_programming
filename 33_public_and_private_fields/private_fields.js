@@ -1,11 +1,15 @@
 //private class members cannot be accessed out of the class in which they were created
 //To mark an instance variable or method as private, you have to prefix it with the # (hash sign).
+//methods can also be set as private using the #
 class User{
     #age = 16; //private
     name = "Paul"; //public
 
     showAge(){
         return this.#age;
+    }
+    #showPassword(){
+        return `Your password is 123`;
     }
 }
 const user = new User();
