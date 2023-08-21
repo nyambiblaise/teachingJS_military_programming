@@ -13,7 +13,7 @@ class Employee{
         return `${this.fName} ${this.lName};`
     }
     getInitials(){
-        return `${this.fName[0].toUpperCase()} ${this.lName[0].toUpperCase()}`;
+        return `${this.fName[0].toUpperCase()}${this.lName[0].toUpperCase()}`;
     }
 }
 class Manager extends Employee{
@@ -22,5 +22,5 @@ class Manager extends Employee{
     }
 }
 const manager = new Manager("joshua","silas",90);
-console.log(manager.getFullName());
+console.log(manager.getFullNames());
 console.log(manager.getInitials());
