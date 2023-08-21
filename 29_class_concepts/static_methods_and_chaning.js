@@ -22,7 +22,7 @@ class Course{
         return this.grade = `Grade is ${g}`;
     }
     requestCertificate(){
-        this.certificate = `Certificate is Requested`;
+        return this.certificate = `Certificate is Requested`;
     }
 }
 //with chaining, it is possible to do....
@@ -38,4 +38,4 @@ Notice how we call setGrade(40) on the result of .markAsCompleted(). Similarly, 
  For this to work, these instance methods should always return this. The reference to the current instance. By doing so, you are able to call other methods on the instance because they're returning the current instance.
  */
 console.log("\n METHOD CHAINING");
-//course.markAsComplicated().setGrade(10).requestCertificate();
+console.log(course.markAsComplicated().setGrade(10).requestCertificate());
