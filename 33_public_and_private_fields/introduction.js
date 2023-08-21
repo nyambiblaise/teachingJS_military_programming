@@ -7,4 +7,7 @@ class User{
 //using public fields...
 class User1{
     age = 19; //age will be automatically set to 19 withiut using the constructor
+    amount = 1_000;
+    currency = "usd";
+    isStudent = false;
 }
