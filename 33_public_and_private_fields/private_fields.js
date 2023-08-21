@@ -25,6 +25,6 @@ class Human{
 }
 class Person{
     constructor() {
-        //this.#firstName = "Judas"; //error here...
+        //this.#firstName = "Judas"; //error here....
     }
 }
