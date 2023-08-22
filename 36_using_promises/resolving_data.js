@@ -8,3 +8,5 @@ const temperatures = [10, 5, 3];
 setTemperatures(temperatures).then(data=>{
     console.log(data);
 })
+//The code above is called a promise resolving data. This means that the promise is giving us an answer after it has
+// been completed. This will be especially important when we work with fetch.
