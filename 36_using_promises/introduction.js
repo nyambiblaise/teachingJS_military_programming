@@ -21,3 +21,6 @@ result.then(() => {
     console.log(result); // Promise {<fulfilled: undefined}
 });
 console.log(result); // Promise {<pending>} (because your code runs top to bottom. However, the promise callback gets scheduled into the future)
+/*
+This is what promises are all about. They let you run a callback sometime in the future when the promise has been completed successfully.
+ */
