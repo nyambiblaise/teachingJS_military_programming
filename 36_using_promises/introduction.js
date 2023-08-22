@@ -15,4 +15,5 @@ const wait = milliseconds=>{
         },milliseconds);
     })
 }
-console.log(wait(1000)); //will return Promise {<pending>}
+const result = wait(1000)
+console.log(result); //will return Promise {<pending>}
