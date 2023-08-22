@@ -14,6 +14,6 @@ export const getWeatherDescription = (city) => {
             if (city.toLowerCase() === "tokyo") {
                 resolve("Sunny");
             }
-        }, 1_000);
+        }, 1000);
     });
 };
