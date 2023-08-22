@@ -11,7 +11,9 @@ logWeatherDescription("Tokyo"); // will log "Sunny"
 import {getWeatherDescription} from "./exo_weather_question.js";
 
 const logWeatherDescription = cityName=>{
-
+    getWeatherDescription(cityName).then(data=>{
+        console.log(data);
+    })
 }
 logWeatherDescription("tokyo");
 logWeatherDescription("douala");
