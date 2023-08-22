@@ -5,3 +5,11 @@ const delayedWelcome = name=>{
     console.log(`Welcome ${name}`);
 };
 setTimeout(delayedWelcome,1000);
+
+//or...
+let delayMessage = someUser=>{
+    setTimeout(()=>{
+        console.log(`Welcome ${someUser}`);
+    })
+}
+delayMessage('Jonas')
