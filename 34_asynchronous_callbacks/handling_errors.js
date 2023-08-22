@@ -10,4 +10,4 @@ setTemperatures(temperatures,value=>{
     console.error(reason);
 })
 //the simplified function can be
-setTemperatures(temperatures,successCallBack,failureFallBack);
+setTemperatures(temperatures,successCallback,errorCallback);
