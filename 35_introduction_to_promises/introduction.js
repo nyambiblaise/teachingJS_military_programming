@@ -8,6 +8,7 @@ const wait = milliseconds=>{
         },milliseconds);
     });
 }
-wait(1000).then(()=>{
-    console.log(`Waited for x seconds`);
+const time = 1000;
+wait(time).then(()=>{
+    console.log(`Waited for ${time/1000} seconds`);
 })
