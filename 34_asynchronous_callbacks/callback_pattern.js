@@ -12,3 +12,4 @@ const welcomeUser = (name,callback)=>{
         callback(); //runs when code is successful
     },2000);
 }
+welcomeUser('judas','pep')
