@@ -9,3 +9,10 @@ In this case, we say that the promise rejected. The reason for this naming will 
 
 The .catch(callback) allows you to handle the rejected state of a promise.
  */
+
+getWeatherIn("Amsterdam").then(data=>{
+    console.log(data);
+})
+    .catch(error=>{
+    console.error(error);
+})
