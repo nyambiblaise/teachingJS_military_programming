@@ -11,6 +11,8 @@ const wait = milliseconds=>{
 const time = 1000;
 wait(time).then(()=>{
     console.log(`Waited for ${time/1000} seconds`);
+}).catch(()=>{
+    console.log("Something went wrong");
 })
 /*
 Because the function wait() returns a new promise, then we can call .then() on its result.
