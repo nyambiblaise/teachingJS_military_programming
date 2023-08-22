@@ -5,7 +5,7 @@ export const getUserDetails = (someUser)=> {
             reject("No user Passed");
         }
         setTimeout(()=>{
-            resolve("User gotten successfully...");
-        },1000);
+            resolve(`${someUser}'s gotten successfully...`);
+        },5000);
     })
 }

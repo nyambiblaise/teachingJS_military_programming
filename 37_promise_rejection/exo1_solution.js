@@ -1,13 +1,14 @@
 import {getUserDetails} from "./exo1_question.js";
 
-const startLoader = ()=>{
-    console.log("Searching for user....");
+let find = "Jones";
+const startLoader = (name)=>{
+    console.log(`Searching for ${name}....`);
 }
 const stopLoader = ()=>{
     console.log("Search has been completed")
 }
-getUserDetails("john").then(data=>{
-    startLoader();
+startLoader(find);
+getUserDetails(find).then(data=>{
     console.log(data);
 }).catch(error=>{
     console.error()
