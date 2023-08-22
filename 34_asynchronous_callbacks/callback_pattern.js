@@ -6,3 +6,9 @@ We cannot block the execution of JavaScript until a certain long task has finish
 
 This is the reason why we have callbacks (and later promises). It allows us to continue running the rest of the code while scheduling some functions in the future.
  */
+const welcomeUser = (name,callback)=>{
+    setTimeout(()=>{
+        console.log(`Welcoming ${name}`);
+        callback(); //runs when code is successful
+    },2000);
+}
