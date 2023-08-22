@@ -10,8 +10,9 @@ Assuming a function wait(milliseconds) that returns a promise. Let's try to cons
  */
 const wait = milliseconds=>{
     return new Promise(()=>{
-        setTimeout(resolve()=>{
+        setTimeout(()=>{
             resolve();
         },milliseconds);
     })
 }
+console.log(wait(1000));
