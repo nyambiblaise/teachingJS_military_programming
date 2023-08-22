@@ -5,8 +5,17 @@ The reason for this naming will become clearer once we learn about the Promise.r
 One of the most useful features of promises is when they resolve with some data, an answer of some computation, or some values coming from an external service/API.
  */
 const temperatures = [10, 5, 3];
-setTemperatures(temperatures).then(data=>{
+setTemperatures1(temperatures).then(data=>{
     console.log(data);
 })
 //The code above is called a promise resolving data. This means that the promise is giving us an answer after it has
 // been completed. This will be especially important when we work with fetch.
+const sumPromise = sumTemperatures(temperatures);
+
+console.log(sumPromise); // Promise {<pending>}
+sumPromise.then(data => {
+    console.log(sumPromise); // Promise {<fulfilled: 18>}
+    console.log(data); // 18 (the sum of temperatures)
+});
+
+console.log(sumPromise); // Promise {<pending>}
