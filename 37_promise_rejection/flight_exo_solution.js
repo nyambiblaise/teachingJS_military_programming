@@ -7,7 +7,7 @@ In the future, once we implement user-details, the code will automatically work 
  */
 import {fakeFetch} from "./flight_exo_question.js";
 
-loginUser = ()=>{
+const loginUser = ()=>{
     fakeFetch("user-details").then(data=>{
         console.log(data);
     })
@@ -15,5 +15,4 @@ loginUser = ()=>{
             console.error(error);
         })
 }
-}
-fakeFetch()
+loginUser();
