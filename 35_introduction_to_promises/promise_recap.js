@@ -8,7 +8,7 @@ const someFunction = (a,b)=>{
 }
 //calling it
 someFunction(5,3).then(successCallback=>{
-    console.log(`sum is ${successCallback}`);
+
 }).catch(errorCallback=>{
-    console.error(`sum is ${errorCallback}`);
+
 });
