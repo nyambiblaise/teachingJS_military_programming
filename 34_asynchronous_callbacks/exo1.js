@@ -4,4 +4,4 @@
 const delayedWelcome = name=>{
     console.log(`Welcome ${name}`);
 };
-setTimeout(delayedWelcome,1000);
+setTimeout(delayedWelcome("Jude"),1000);
