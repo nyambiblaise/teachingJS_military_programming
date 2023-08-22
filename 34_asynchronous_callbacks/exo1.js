@@ -2,7 +2,7 @@
 // future.
 
 const delayedWelcome = name=>{
-    console.log(`Welcome ${name}`);
+    console.log(`Welcome now... ${name}`);
 };
 setTimeout(delayedWelcome,1000);
 
