@@ -6,4 +6,6 @@ For example, let's say you're trying to connect to a weather service/API, this m
 This lets us know that something went wrong which allows us to handle the error by showing an error message or a retry button for example.
 
 In this case, we say that the promise rejected. The reason for this naming will become clearer once we learn about the Promise.reject() method.
+
+The .catch(callback) allows you to handle the rejected state of a promise.
  */
