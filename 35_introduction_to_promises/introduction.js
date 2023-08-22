@@ -8,3 +8,6 @@ const wait = milliseconds=>{
         },milliseconds);
     });
 }
+wait(1000).then(()=>{
+    console.log(`Waited for x seconds`);
+})
