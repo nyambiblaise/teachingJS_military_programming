@@ -16,5 +16,5 @@ const logWeatherDescription = cityName =>{
     })
 }
 logWeatherDescription("tokyo");
-logWeatherDescription("douala");
+//logWeatherDescription("douala");
 logWeatherDescription("amsterdam");
