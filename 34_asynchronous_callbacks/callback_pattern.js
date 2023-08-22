@@ -9,7 +9,9 @@ This is the reason why we have callbacks (and later promises). It allows us to c
 const welcomeUser = (name,callback)=>{
     setTimeout(()=>{
         console.log(`Welcoming ${name}`);
-        callback(); //runs when code is successful
+        if(callback){
+            callback();
+        } //runs when code is successful
     },2000);
 }
-welcomeUser;
+welcomeUser('pep');
