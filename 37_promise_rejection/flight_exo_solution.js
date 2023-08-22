@@ -5,3 +5,15 @@ This will fail at the moment since it's not implemented so make sure to handle t
 
 In the future, once we implement user-details, the code will automatically work because the promise will not reject.
  */
+import {fakeFetch} from "./flight_exo_question.js";
+
+loginUser = ()=>{
+    fakeFetch("user-details").then(data=>{
+        console.log(data);
+    })
+        .catch(error=>{
+            console.error(error);
+        })
+}
+}
+fakeFetch()
