@@ -10,7 +10,6 @@ const sumTemperatures = (temperatures,callback)=>{
             mySum = total + current;
         },0);
         //callback(sum);
-        return sum;
     },1000)
 }
 console.log(sumTemperatures(temperatures))
