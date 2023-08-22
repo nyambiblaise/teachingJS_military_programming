@@ -11,3 +11,5 @@ setTemperatures(temperatures,value=>{
 })
 //the simplified function can be
 setTemperatures(temperatures,successCallback,errorCallback);
+
+//One of the annoying things about this pattern is that the only differentiation between the success callback and the error callback is their order in the parameters. This is not very clear and can lead to confusion.
