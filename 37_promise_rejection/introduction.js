@@ -20,6 +20,5 @@ getWeatherIn("Amsterdam").then(data=>{
 The .catch(callback) will run when the promise is not successful.
 
 Just like how the promise can resolve with data when successful, it can also reject with some data when it's not successful.
-
 The first argument (which we called error here), can be a string, an object, etc.
  */
