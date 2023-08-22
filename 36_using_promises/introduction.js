@@ -9,10 +9,10 @@ Visualizing the pending state
 Assuming a function wait(milliseconds) that returns a promise. Let's try to console.log() the result of wait(1_000):
  */
 const wait = milliseconds=>{
-    return new Promise(()=>{
+    return new Promise(resolve=>{
         setTimeout(()=>{
             resolve();
         },milliseconds);
     })
 }
-console.log(wait(1000));
+console.log(wait(1000)); //will return Promise {<pending>}
