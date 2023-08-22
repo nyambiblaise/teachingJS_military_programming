@@ -15,10 +15,9 @@ const wait = milliseconds=>{
         },milliseconds);
     })
 }
-const result = wait(1000)
-console.log(result); //will return Promise {<pending>}
-
-result.then(()=>{
-    console.log(result);
-})
-console.log(result)
+const result = wait(1_000);
+console.log(result); // Promise {<pending>}
+result.then(() => {
+    console.log(result); // Promise {<fulfilled: undefined}
+});
+console.log(result); // Promise {<pending>} (because your code runs top to bottom. However, the promise callback gets scheduled into the future)
