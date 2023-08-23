@@ -22,7 +22,7 @@ const fakeFetch = (endpoint)=>{
         }
     })
 }
-fakeFetch("flight-statuss").then((data)=>{
+fakeFetch("flight-status").then((data)=>{
     console.log(data);
 }).catch((error)=>{
     console.error(error);
