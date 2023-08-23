@@ -13,11 +13,13 @@ const info = {
 const fakeFetch = (info) => {
     return new Promise(resolve=>{
         setTimeout(()=>{
-            resolve(info);
+            resolve({
+                departed:false,
+                delayed:true
+            });
         },1000);
     })
 }
-
 fakeFetch().then((data) => {
     console.log(data);
 });
