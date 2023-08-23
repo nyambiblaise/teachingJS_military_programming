@@ -26,4 +26,9 @@ const user = {
 What you will end up needing frequently is converting from a JSON string into a JSON object (in JavaScript) and vice versa.
 
 The reason why this is the most frequent use case is that when you communicate with an API, you cannot send an object. You will have to convert it to a string. Similarly, the API cannot send you an object, it will send you a string. But, that string is not any string. It's a JSON string. That means that it can be converted back into a JSON object.
+
+ Benefits of using JSON
+The major benefit of JSON is that it doesn't really matter in which programming language the API we're trying to talk to is written in. It could be python, node, PHP, Ruby, etc.
+As long as it can read and receive JSON, we can both communicate.
+It's like you're traveling to a foreign country. It doesn't matter the native language of the other person you're communicating with, as long as you can both speak English (or another common language).
  */
