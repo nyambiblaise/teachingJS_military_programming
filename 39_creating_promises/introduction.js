@@ -15,3 +15,8 @@ const waitOneSecond = ()=>{
 
     });
 }
+const waitTwoSeconds = ()=>{
+    return new Promise(resolve => { //here, the executor is called "resolve"
+
+    });
+}
