@@ -15,9 +15,10 @@ const berlinURL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedataba
 const getWeather = ()=>{
     return fetch(amsterdamURL).then(response=>response.json()).then(data=>{
         console.log(data);
+        showTemperature(data.current.temperature);
     })
 }
 const showTemperature = (temperature)=>{
-    console.log(`The temperatur is ${temperature}`);
+    console.log(`The temperature is ${temperature}`);
 }
 getWeather();
