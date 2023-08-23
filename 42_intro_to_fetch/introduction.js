@@ -14,7 +14,20 @@ This means that we'll have to add a .then() after the fetch() call.
 const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json";
 const search = ()=>{
     return fetch(url).then(response=>{
-        console.log(response)
+        return response.json();
     });
 }
-search();
+console.log(search())
+
+/*
+In the previous lesson, we learned that fetch always returns a promise. So, what do we get when we resolve this promise?
+We get a Response object that we're going to call response.
+*/
+fetch(URL)
+    .then(response => {
+        console.log(response); // detailed in next chapter
+    });
+/*
+So, because fetch(URL) returns a promise, we can resolve the promise with a .then(callback). This callback will run sometime in the future when the fetch request has been completed.
+Also, this callback will receive as a first argument the response from the request that we sent. You can call this argument whatever you want, however, we recommend that you call it response.
+ */
