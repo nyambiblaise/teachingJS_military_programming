@@ -8,3 +8,14 @@ new Promise((resolve,reject)={
 
     reject(); // will fail the promise (.catch(callback) will be called)
 })
+//The reject() can also pass some data to the .catch() callback.
+const alwaysReject = ()=>{
+    return new Promise((resolve,reject)=>{
+        reject("This code will reject");
+    });
+}
+alwaysReject().then(()=>{
+    //will never execute
+}).catch((data)=>{
+    console.error(data);//This code will reject
+})
