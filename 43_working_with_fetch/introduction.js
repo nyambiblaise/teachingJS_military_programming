@@ -10,8 +10,8 @@ const todoListURL = "https://jsonplaceholder.typicode.com/todos/1";
 //getting data from a simple array
 const getToDoListData = ()=>{
     return fetch(todoListURL).then(response=>response.json()).then(data=>{
-        console.log(data);
-        return data;
+        console.log(data.title); //will display just title
+        return data; //will return object
     })
 }
 getToDoListData().then(value => {
