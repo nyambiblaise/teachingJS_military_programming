@@ -24,4 +24,15 @@ This .json() method on response is almost exactly the same as JSON.parse(string)
 
 What you need to understand is that every time you send a fetch request to a certain API and you expect JSON (which
  is most of the time), you should convert the response that you get back into JSON format.
+
+ You can use IMPLICIT RETURN with the fetch
  */
+//without implicit return
+const URL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json";
+fetch(URL)
+    .then(response => {
+        return response.json();
+    });
+
+//with implicit return
+fetch(URL).then(response=>response.json());
