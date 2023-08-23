@@ -1,5 +1,5 @@
 //NOT RESOLVING DATA
-const time = 4000;
+const time = 1000;
 let uname="john";
 let upass = "mary";
 const loginUser = (username,password)=>{
@@ -20,6 +20,6 @@ const signInUser = (uname,upass)=>{
         },time);
     })
 }
-signInUser(uname,upass).then((uname,upass)=>{
-    console.log(`Username: ${uname}, Upass: ${upass}`);
+signInUser(uname,upass).then((x,y)=>{
+    console.log(`Username: ${x}, Upass: ${y}`);
 })
