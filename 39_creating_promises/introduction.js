@@ -34,3 +34,5 @@ const waitFourSeconds = ()=>{
         },1000);
     })
 }
+//When you call resolve(), the promise state will be changed from pending to fulfilled. This is why when you call resolve(), the .then() callback will execute.
+console.log(waitFourSeconds());
