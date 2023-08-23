@@ -11,3 +11,14 @@ const person = {
     lastName: "Green",
     age: 24
 };
+    /*
+    JSON is a subset of JavaScript objects. This means that every JSON object is a JavaScript object whereas not every JavaScript object is a JSON object. This is not something you will encounter frequently, but the following is a JavaScript object but not a JSON object:
+     */
+
+const user = {
+    firstName: "Sam",
+    lastName: "Green",
+    getFullName: function() {
+        return `${this.firstName} ${this.lastName}`
+    }
+}
