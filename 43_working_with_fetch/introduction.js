@@ -1,3 +1,8 @@
 /*
-endpoint: https://jsonplaceholder.typicode.com/users
+endpoint:
+array of objects: https://jsonplaceholder.typicode.com/users
+array: https://jsonplaceholder.typicode.com/todos/1
+-  every endpoint can return different data types.
  */
+const usersURL = "https://jsonplaceholder.typicode.com/users";
+const todoListURL = "https://jsonplaceholder.typicode.com/todos/1";
