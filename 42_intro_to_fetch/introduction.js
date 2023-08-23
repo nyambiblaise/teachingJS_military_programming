@@ -13,12 +13,8 @@ This means that we'll have to add a .then() after the fetch() call.
  */
 const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json";
 const search = ()=>{
-    return fetch(url).then(()=>{
-        return new Promise((resolve,reject)=>{
-            resolve("goo")
-        })
-    }).catch(()=>{
-        console.log("error...")
+    return fetch(url).then(response=>{
+        console.log(response)
     });
 }
-console.log(search())
+search();
