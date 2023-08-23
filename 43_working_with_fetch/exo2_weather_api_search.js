@@ -11,3 +11,13 @@ Complete the getWeather function such that it makes the correct fetch request an
  */
 const amsterdamURL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/weatherstack/amsterdam.json";
 const berlinURL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/weatherstack/berlin.json";
+
+const getWeather = ()=>{
+    return fetch(amsterdamURL).then(response=>response.json()).then(data=>{
+        console.log(data);
+    })
+}
+const showTemperature = (temperature)=>{
+    console.log(`The temperatur is ${temperature}`);
+}
+getWeather();
