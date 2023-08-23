@@ -9,3 +9,5 @@ It's not the live weather but rather a snapshot of the weather on a certain day.
 
 Complete the getWeather function such that it makes the correct fetch request and calls the showTemperature function with the temperature that was returned in the API response.
  */
+const amsterdamURL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/weatherstack/amsterdam.json";
+const berlinURL = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/weatherstack/berlin.json";
