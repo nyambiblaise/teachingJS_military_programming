@@ -6,7 +6,7 @@ Call the displayCompletedChapters with only the chapters (array) that have been 
 const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/chapters/all.json";
 const displayCompletedChapters = ()=>{
     return fetch(url).then(r=>r.json()).then(data=>{
-        console.log(data);
+        console.log(data.filter(someData=>someData.isCompleted))
     })
 }
 displayCompletedChapters()
