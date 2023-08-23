@@ -12,3 +12,7 @@ const wait = (milliseconds)=>{
         },milliseconds);
     })
 }
+//Notice how the resolve() method can receive an argument. This argument will then be available in the .then(callback). So, the code above can be used as following:
+wait(1000).then(data=>{
+    console.log(data);
+})
