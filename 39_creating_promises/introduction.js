@@ -26,3 +26,11 @@ const waitThreeSeconds = ()=>{
         resolve();
     })
 }
+//now, let us try to write an asyncronouse function setimeout
+const waitFourSeconds = ()=>{
+    return new Promise(resolve => {
+        setTimeout(()=>{
+            resolve();
+        },1000);
+    })
+}
