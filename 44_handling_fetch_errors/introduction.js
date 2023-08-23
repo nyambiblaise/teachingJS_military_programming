@@ -33,3 +33,23 @@ fetch(URL)
     .catch(error => {
         console.error(error);
     });
+
+/*
+What we're doing here is checking when response.ok is false, in that case, we throw a new error.
+The throw new Error("API issues.") will reject the promise, so, the code stops running the current .then(callback) and then jumps to the .catch(callback).
+
+The end result here is that both, network errors and API errors will end up rejecting the fetch() promise. So, you can handle both of them with a single .catch(callback).
+
+Always handle rejections
+Regardless of how the API handles errors, we recommend that you always handle the rejected state of fetch(). That's because network errors can occur at any time and you still want to handle that with the .catch().
+
+So, in summary, here's the basic fetch boilerplate that you can save to your notes and use whenever necessary:
+ */
+fetch(URL)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error(error);
+    })
