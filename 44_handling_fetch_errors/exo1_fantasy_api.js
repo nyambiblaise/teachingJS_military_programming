@@ -2,8 +2,8 @@ const fantasyServer = "https://fantasy.premierleague.com/api/entry";
 const findManagerByID = (managerID) =>{
     return fetch(`${fantasyServer}/${managerID}`).then(response=>{
         if(!response.ok){
-            console.log("API Not functioning...")
-            console.log(response.status)//404 if not found
+            throw new Error("API Not functioning...")
+            //console.log(response.status)//404 if not found
         }
         return response.json()
     }).then(data=>{
