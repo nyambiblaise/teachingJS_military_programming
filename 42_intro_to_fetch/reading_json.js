@@ -26,3 +26,17 @@ const getData = ()=>{
 }
 //console.log(getData());
 getData();
+
+/*
+Most of the time, APIs will return either an array (of objects, of numbers, etc.) or an object.
+
+It's extremely important to add a console.log(data) the first time you work with a URL so that you can see, visualize & understand what kind of data this API (and this particular URL) is returning.
+
+Every API is different. Every API is developed by different people, companies, and has different goals.
+
+For example, an API that returns the list of football players will most likely return an array of objects. Whereas an API returning the currency rate of USD and EUR will most likely return an object.
+
+Moreover, the same API can have different return types per URL because every URL handles different logic. For example, when you ask for all the exchange rates you will most likely receive an array of objects, however, when you ask for a specific exchange rate against USD, you may receive an object.
+
+There are no rules here, it depends on how the company behind this API/service has decided to implement their response.
+ */
