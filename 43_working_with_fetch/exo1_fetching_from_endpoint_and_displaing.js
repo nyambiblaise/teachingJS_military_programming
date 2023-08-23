@@ -5,8 +5,8 @@ const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app
 
 const checkForNewNotifications = ()=>{
     return fetch(url).then(response=>response.json()).then(data=>{
-        console.log(data)
-        //showNewNotifications(data);
+        //console.log(data)
+        showNewNotifications(data.count);
     })
 }
 const showNewNotifications = (number)=>{
