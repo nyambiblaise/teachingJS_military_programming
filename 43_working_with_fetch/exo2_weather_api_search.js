@@ -19,6 +19,6 @@ const getWeather = ()=>{
     })
 }
 const showTemperature = (temperature)=>{
-    console.log(`The temperature is ${temperature}`);
+    console.log(`The current temperature is ${temperature}`);
 }
 getWeather();
