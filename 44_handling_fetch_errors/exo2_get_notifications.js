@@ -8,11 +8,12 @@ const checkForNewNotifications = ()=>{
         if(!response.ok){
             throw new Error("API Error...");
         }
-        return response=>response.json();
+        return response.json();
     }).then(data=>{
+        //console.log(data);
         showNewNotifications(data.count);
     }).catch(error=>{
-        console.log("Something went wrong");
+        console.log(`Something went wrong - ${error}`);
     })
 }
 const showNewNotifications = (number)=>{

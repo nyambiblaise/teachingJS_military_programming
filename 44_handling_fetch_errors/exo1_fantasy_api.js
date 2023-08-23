@@ -5,7 +5,7 @@ const findManagerByID = (managerID) =>{
             throw new Error("API Not functioning...")
             //console.log(response.status)//404 if not found
         }
-        return response.json()
+        return response=>response.json()
     }).then(data=>{
         console.log(data)
         /*if(response){
