@@ -1,4 +1,5 @@
 /*
+Calling resolve() with a certain value will make that value available in the .then(callback).
 In chapter 37, we saw how a promise can resolve with data. For example, when you ask for weather data, the promise will
  resolve
  with weather data. In this lesson, we'll learn how this works.
