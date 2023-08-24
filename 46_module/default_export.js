@@ -26,3 +26,15 @@ If the answer is yes or maybe, then you should go with named exports.
 
 The most common use case for default exports is when you define a class in a file that you expect to use outside of that file. Since the file contains only 1 class, this could serve as the default export.
  */
+// helpers.js
+export default class Helper {}
+export const votingAge = 18;
+
+// index.js
+import Helper from "./helpers.js";
+
+// OR
+import {votingAge} from "./helpers.js";
+
+// OR
+import Helper, {votingAge} from "./helpers.js";
