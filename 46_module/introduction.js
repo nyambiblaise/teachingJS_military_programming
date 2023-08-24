@@ -11,6 +11,9 @@ to use a class/function/variable out of a module, you EXPORT it
 to use a class/function/variable in another module, you IMPORT IT
  */
 import {Helper} from "./helpers.js";
+import {serverPort} from "./config.js";
+import {serverURL} from "./config.js";
+
 const helper = new Helper();
 console.log(helper.capitalizeWord("nyambi"))
 
