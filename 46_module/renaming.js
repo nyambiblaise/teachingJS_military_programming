@@ -9,3 +9,5 @@ const getDate() {
     // ...
 }
 getDateHelper(); // the function that was imported
+
+//Ideally, it's best to avoid the need to have to rename it. But, sometimes you have no other choice.
