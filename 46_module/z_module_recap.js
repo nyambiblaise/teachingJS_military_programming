@@ -15,7 +15,6 @@ either export only one variable/function/class.
 or, it will export several variables/functions/classes. However, one of these is considered the main one (or the most important one).
 
 - When writing your own modules, you can decide to ignore default exports and always use named exports.
-
 - The most common use case for default exports is when you define a class in a file that you expect to use outside of
  that file.
  */
