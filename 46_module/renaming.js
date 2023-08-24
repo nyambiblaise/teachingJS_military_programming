@@ -3,7 +3,7 @@ It's also possible to rename a variable/function/class that you import. This is 
 
 For example:
  */
-import {getDate as getDateHelper} from "./date-helpers.js";
+import {getDate as getDateHelper} from "./date-2_helpers.js";
 
 const getDate() {
     // ...

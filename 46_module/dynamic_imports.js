@@ -3,6 +3,6 @@ Dynamic imports allow you to import another file/module only when necessary. The
 
 You may have noticed that import() (when used as a function) returns a promise. This will be covered in a future chapter.
  */
-import("./helpers.js").then(module => {
+import("./2_helpers.js").then(module => {
     console.log(module);
 });
