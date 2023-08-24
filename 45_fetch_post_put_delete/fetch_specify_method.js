@@ -55,6 +55,12 @@ fetch(URL,{
 
 /*
 We wrapped the body with JSON.stringify().
+What you will end up needing frequently is converting from a JSON string into a JSON object.
+
+The reason why this is the most frequent use case is that when you communicate with an API, you cannot send an object. You will have to convert it to a string. Similarly, the API cannot send you an object, it will send you a string. But, that string is not any string. It's a JSON string. That means that it can be converted back into a JSON object.
+
+So, we cannot send objects directly to the API, thus we have to convert them to a string with JSON.stringify.
+
 When the fetch request completes, we convert the server response to json.
 We log the data received from the server (this often contains the confirmation that the tweet was created).
 POST ENDS HERE ============================================ */
