@@ -6,5 +6,21 @@ In this second option, you can specify:
 the method of the request (GET/POST/PUT/DELETE)
 the headers you'd like to send
 the body you'd like to send
-Let's start with the method. The method defaults to GET. So, with the following code:
+Let's start with the method.
+
+The method defaults to GET. So, with the following code:
  */
+fetch(URL)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    });
+
+//passing the method gives...
+fetch(URL,{
+    method:"GET"
+})
+    .then(r=>r.json())
+    .then(data=>{
+        console.log(data);
+})
