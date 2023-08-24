@@ -9,7 +9,7 @@ const addUser = (userData)=>{
     return fetch(userURL,{
         method:"POST",
         headers: {
-            'Content-type': 'application/json; charset=UTF-8'
+            'Content-type': 'application/json'
         },
         body:JSON.stringify(userData)
     }).then(response=>{
@@ -18,6 +18,7 @@ const addUser = (userData)=>{
         }
         return response.json();
     }).then(data=>{
+        console.log("Post added")
         console.log(data);
     }).catch(error=>{
         console.error(error);
