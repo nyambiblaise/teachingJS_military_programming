@@ -9,7 +9,7 @@ const userData = {firstName: "Jude", lastName: "Nyambi"};
 const updateUserProfile = (firstName, lastName)=>{
     return fetch(apiURL,{
         method:"PUT",
-        body:JSON.stringify(userData)
+        body:JSON.stringify(firstName,lastName)
     }).then(response=>{
         if(!response.ok){
             throw new Error(`Something went wrong ${response.statusText}`);
