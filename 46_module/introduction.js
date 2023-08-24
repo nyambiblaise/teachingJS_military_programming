@@ -14,6 +14,9 @@ import {Helper} from "./helpers.js";
 import {serverPort} from "./config.js";
 import {serverURL} from "./config.js";
 
+//or
+import {serverSettings, serverPort, serverURL, serverUsername} from "./config.js";
+
 const helper = new Helper();
 console.log(helper.capitalizeWord("nyambi"))
 
