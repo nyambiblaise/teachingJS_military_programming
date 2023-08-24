@@ -1,16 +1,20 @@
-const userURL = "https://jsonplaceholder.typicode.com/users";
+const userURL = "https://jsonplaceholder.typicode.com/posts";
 const user = {
-    id:11,
-    name:"Nyambi",
-    username:"nyambiblaise"
+    userId:21,
+    id:200,
+    title:"Nyambi",
+    body:"i am posting about CANADA"
 }
 const addUser = (userData)=>{
     return fetch(userURL,{
-        method:"PUT",
+        method:"POST",
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+        },
         body:JSON.stringify(userData)
     }).then(response=>{
         if(!response.ok){
-            throw new Error(`Couldnt get user because ${response.statusText}`)
+            throw new Error(`Couldnt add post because ${response.statusText}`)
         }
         return response.json();
     }).then(data=>{
@@ -19,3 +23,4 @@ const addUser = (userData)=>{
         console.error(error);
     })
 }
+addUser(user);
