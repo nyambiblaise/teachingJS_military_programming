@@ -52,4 +52,9 @@ fetch(URL,{
         }
     })
 })
-/* POST ENDS HERE ============================================ */
+
+/*
+We wrapped the body with JSON.stringify().
+When the fetch request completes, we convert the server response to json.
+We log the data received from the server (this often contains the confirmation that the tweet was created).
+POST ENDS HERE ============================================ */
