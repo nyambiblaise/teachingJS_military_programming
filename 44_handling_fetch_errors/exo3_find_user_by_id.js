@@ -7,7 +7,7 @@ const findUserByID = (userID)=>{
         }
         return response.json();
     }).then(userData=>{
-        console.log(userData.);
+        console.log(userData);
     }).catch(error=>{
         console.error(error);
     })
