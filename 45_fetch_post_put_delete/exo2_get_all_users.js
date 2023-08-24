@@ -5,14 +5,12 @@ Method: PUT
 Body: {firstName: "Sam", lastName: "Green"} (replace with values from the form)
  */
 const apiURL = "https://api.learnjavascript.online/demo/user.json";
-const userData = {firstName: "Jude", lastName: "Nyambi"};
-const updateUserProfile = (firstName, lastName)=>{
+const getAllUsers = ()=>{
     return fetch(apiURL,{
-        method:"PUT",
-        body:JSON.stringify(userData)
+        method:"GET"
     }).then(response=>{
         if(!response.ok){
-            throw new Error(`Something went wrong ${response.statusText}`);
+            throw new Error(response.statusText);
         }
         return response.json();
     }).then(data=>{
@@ -21,4 +19,4 @@ const updateUserProfile = (firstName, lastName)=>{
         console.error(error);
     })
 }
-updateUserProfile(userData)
+getAllUsers()
