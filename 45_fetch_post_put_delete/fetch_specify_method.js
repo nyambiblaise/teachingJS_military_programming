@@ -24,3 +24,10 @@ fetch(URL,{
     .then(data=>{
         console.log(data);
 })
+//POST: you MUST specify the method if you want to fetch data using the POST method
+fetch(URL,{
+    method:"POST"
+}).then(response=>response.json())
+    .then(data=>{
+    console.log(data);
+})
