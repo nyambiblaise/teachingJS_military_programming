@@ -8,7 +8,7 @@ the headers you'd like to send
 the body you'd like to send
 Let's start with the method.
 
-The method defaults to GET. So, with the following code:
+The method defaults to GET. If default method is GET, you are not obliged to put GET. both codes below are correct
  */
 fetch(URL)
     .then(response => response.json())
