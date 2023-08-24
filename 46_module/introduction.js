@@ -13,3 +13,16 @@ to use a class/function/variable in another module, you IMPORT IT
 import {Helper} from "./helpers.js";
 const helper = new Helper();
 console.log(helper.capitalizeWord("nyambi"))
+
+/*
+- This is assuming both files are in the same folder, hence the path is "./helpers.js" (./ means current directory).
+
+- You cannot import "helpers.js" as this will import from an installed library (more on that in a future chapter).
+ The path has to start with ./.
+
+- The import keyword has to be at the top of your file. You cannot run any other kind of JavaScript code before the
+ import statements. So always start with the import statements at the top of the file. This limitation does not apply to export statements.
+
+- You need to be using a module bundler (such as Webpack/Parcel/Vite) for this to work (we have a dedicated chapter
+ about module bundlers later in this course) or you have to use <script type="module"></script> (explained at the end of this lesson).
+ */
