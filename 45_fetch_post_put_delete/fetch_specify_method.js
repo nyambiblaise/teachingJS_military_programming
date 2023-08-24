@@ -6,6 +6,8 @@ In this second option, you can specify:
 the method of the request (GET/POST/PUT/DELETE)
 the headers you'd like to send
 the body you'd like to send
+
+
 Let's start with the method.
 
 The method defaults to GET. If default method is GET, you are not obliged to put GET. both codes below are correct
@@ -25,8 +27,12 @@ fetch(URL,{
     .then(data=>{
         console.log(data);
 })
-/* GET STARTS HERE ============================================ */
+/* GET STARTS HERE ============================================
 //POST: you MUST specify the method if you want to fetch data using the POST method
+- method of the request (GET/POST/PUT/DELETE)
+- headers you'd like to send
+- body you'd like to send
+ */
 /* POST STARTS HERE ============================================ */
 fetch(URL,{
     method:"POST"
@@ -35,5 +41,15 @@ fetch(URL,{
     console.log(data);
 })
 //Note that with the POST, PUT, DELETE methods, you MUST pass some data to the body via the api url.
-
+fetch(URL,{
+    method:"POST",
+    body:JSON.stringify({
+        var1:"value1",
+        var2:"value2",
+        courses:{
+            maths:17,
+            chemistry:10
+        }
+    })
+})
 /* POST ENDS HERE ============================================ */
