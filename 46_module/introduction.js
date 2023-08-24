@@ -31,4 +31,8 @@ console.log(helper.capitalizeWord("nyambi"))
 
 - You need to be using a module bundler (such as Webpack/Parcel/Vite) for this to work (we have a dedicated chapter
  about module bundlers later in this course) or you have to use <script type="module"></script> (explained at the end of this lesson).
+
+ However, if you're not using a module bundler (webpack/parcel) and you'd like to use import/export syntax, then you have to add type="module" to that script.
+This will enable the modern import/export syntax in the browser:
  */
+<script type="module" src="index.js"></script>
