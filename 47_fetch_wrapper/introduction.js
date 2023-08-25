@@ -28,4 +28,10 @@ A real-life app would have anywhere between 20 and 100+ fetch requests to the sa
 
 This is exactly why a fetch wrapper class can come in handy. Assuming we already built this fetch wrapper, we can re-write the code above such that it looks like the following:
  */
-const API = new FetchWrapper()
+const API = new FetchWrapper(URL);
+API.get("endPoint1").then(data=>{
+    console.log(data);
+});
+API.get("endPoint2").then(data=>{
+    console.log(data);
+})
