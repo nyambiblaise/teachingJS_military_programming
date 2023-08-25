@@ -9,23 +9,28 @@ class FetchWrapper{
             headers: {
                 "Content-Type":"application/json"
             }
-        })
-                .then(response=>response.json());
+        }).then(response=>response.json());
     }
     put(endPoint,jsonData){
         return fetch(this.apiUrl,{
             method:"post",
             body:JSON.stringify(jsonData),
-            body:{
+            headers:{
                 "Content-Type":"application-json"
             }
-        })
+        }).then(response=>response.json());
     }
 }
 const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/";
 
-const getData = new FetchWrapper(url);
-getData.get("notifications/new.json").then(data=>{
+const fetchWrapper = new FetchWrapper(url);
+const msg = {
+    age:14,name:"paul ndip"
+}
+/*fetchWrapper.get("notifications/new.json").then(data=>{
+    console.log(data);
+})*/
+fetchWrapper.put("notifications/new.json",msg).then(data=>{
     console.log(data);
 })
 
