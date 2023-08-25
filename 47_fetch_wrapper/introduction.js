@@ -5,4 +5,15 @@ A fetch wrapper is a class that wraps the fetch API in a way that works specific
 
 mostly the same API (same base URL but different endpoints)
 a JSON API (an API that returns JSON)
+
+This means that for every fetch request we make, we'll have quite some repetition.
+For example, assuming the following API documentation:
+
+Base URL: https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app
+
+Endpoints:
+
+GET /notifications/new.json
+GET /chapters/all.json
+If we have to send 2 fetch requests to both endpoints, we'll have quite some repetition:
  */
