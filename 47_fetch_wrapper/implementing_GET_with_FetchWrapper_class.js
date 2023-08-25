@@ -9,16 +9,26 @@ class FetchWrapper{
             headers: {
                 "Content-Type":"application/json"
             }
-        }).then(response=>response.json());
+        }).then(response=>{
+            if(!response.ok){
+                throw new Error(`Something wrong ${response.statusText}`);
+            }
+            return response.json()
+        });
     }
     put(endPoint,jsonData){
-        return fetch(this.apiUrl,{
+        return fetch(this.apiUrl+endPoint,{
             method:"post",
             body:JSON.stringify(jsonData),
             headers:{
                 "Content-Type":"application-json"
             }
-        }).then(response=>response.json());
+        }).then(response=> {
+            if(!response.ok){
+                throw new Error(`Ooops ${response.statusText}`);
+            }
+            return response.json()
+        });
     }
 }
 const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/";
@@ -27,9 +37,9 @@ const fetchWrapper = new FetchWrapper(url);
 const msg = {
     age:14,name:"paul ndip"
 }
-/*fetchWrapper.get("notifications/new.json").then(data=>{
+fetchWrapper.get("notifications/new.json").then(data=>{
     console.log(data);
-})*/
+})
 fetchWrapper.put("notifications/new.json",msg).then(data=>{
     console.log(data);
 })
