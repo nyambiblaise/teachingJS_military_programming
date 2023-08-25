@@ -54,3 +54,9 @@ API.put("endPoint4",{
 }).then(data=>{
     console.log(data);
 })
+/*
+the code is a lot shorter.
+it automatically calls JSON.stringify().
+it automatically calls response => response.json().
+it automatically sets the default Content-Type header.
+ */
