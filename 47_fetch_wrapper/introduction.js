@@ -35,3 +35,10 @@ API.get("endPoint1").then(data=>{
 API.get("endPoint2").then(data=>{
     console.log(data);
 })
+/*
+This FetchWrapper class has the following benefits:
+
+we only need to set the base URL once (we pass it to the constructor).
+It always converts the response to JSON (response => response.json()), since our API always returns JSON.
+There are other benefits that are discussed in the chapter recap.
+ */
