@@ -23,3 +23,8 @@ fetch("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notif
 fetch("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/chapters/all.json").then(response=>response.json()).then(data=>{
     console.log(data)
 })
+/*
+A real-life app would have anywhere between 20 and 100+ fetch requests to the same API (same base URL but different endpoints). This is a lot of repetition.
+
+This is exactly why a fetch wrapper class can come in handy. Assuming we already built this fetch wrapper, we can re-write the code above such that it looks like the following:
+ */
