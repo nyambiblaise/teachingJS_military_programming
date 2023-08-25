@@ -41,4 +41,16 @@ This FetchWrapper class has the following benefits:
 we only need to set the base URL once (we pass it to the constructor).
 It always converts the response to JSON (response => response.json()), since our API always returns JSON.
 There are other benefits that are discussed in the chapter recap.
+
+Usuing the PUT, DELETE, POST, it now becomes this...
  */
+API.put("endPoint3",jsonData).then(data=>{
+    console.log(data);
+})
+//or
+API.put("endPoint4",{
+    name:"john",
+    age:18
+}).then(data=>{
+    console.log(data);
+})
