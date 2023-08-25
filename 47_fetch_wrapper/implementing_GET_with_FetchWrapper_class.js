@@ -4,24 +4,14 @@ class FetchWrapper{
 
     }
     get(endPoint){
-        return fetch(url + endPoint)
+        return fetch(this.apiUrl + endPoint)
                 .then(response=>response.json());
     }
 }
-const getData = new FetchWrapper("");
-getData.get("").then(data=>{
+const url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/";
+const getData = new FetchWrapper(url);
+getData.get("notifications/new.json").then(data=>{
     console.log(data);
-})
-
-fetch(url).then(response=>{
-    if(!response.ok){
-        throw new Error(`Something went wrong with API`);
-        return response=>response.json();
-    }
-}).then(data=>{
-    return data;
-}).catch(error=>{
-    return error;
 })
 
 /*
