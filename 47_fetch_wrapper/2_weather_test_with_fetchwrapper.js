@@ -14,4 +14,5 @@ const fw = new FetchWrapper(url);
 const city = "aMsterDam";
 fw.get(`${city.toLowerCase()}.json`).then(data=>{
     console.log(data);
+
 })
