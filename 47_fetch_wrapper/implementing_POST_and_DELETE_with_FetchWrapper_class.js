@@ -14,3 +14,7 @@ class FetchWrapper {
         }).then(response => response.json());
     }
 }
+/*
+The #send() method takes the method ("put", "post", or "delete") followed by the endpoint and the body.
+So, now, we can implement the put(), post(), and delete() methods that call this internal private #send() method:
+ */
