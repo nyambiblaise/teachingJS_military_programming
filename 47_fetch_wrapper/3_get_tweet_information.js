@@ -8,8 +8,12 @@ let url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/"
 const fetchWrapper = new FetchWrapper(url);
 
 const getTweetDetails = ()=>{
-    fetchWrapper.get(`${url}tweet/1080777336298049537.json`)
+    fetchWrapper.get(`${url}tweet/1080777336298049537.json`).then(data=>{
+        //showAuthorName()
+        console.log(data)
+    })
 }
-showAuthorName(firstname,lastname){
+const showAuthorName = (firstname,lastname)=>{
     console.log(`${firstname} ${lastname}`);
 }
+getTweetDetails();
