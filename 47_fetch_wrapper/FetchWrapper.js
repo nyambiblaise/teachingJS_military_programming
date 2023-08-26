@@ -10,4 +10,14 @@ export default class FetchWrapper{
             }
         }).then(response=>response.json());
     }
+    put(endpoint,data){
+        return fetch(this.baseURL+endpoint, {
+            method:"POST",
+            headers:{
+                "Content-Type":"application-json"
+            },
+            body:JSON.stringify(data)
+        })
+            .then(response=>response.json());
+    }
 }
