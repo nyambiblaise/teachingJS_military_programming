@@ -6,9 +6,12 @@ Call the displayCompletedChapters with only the chapters (array) that have been 
 import FetchWrapper from "./FetchWrapper.js";
 const fetchWrapper = new FetchWrapper("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/");
 
-const displayCompletedChapters = ()=>{
+const getChapters = ()=>{
     fetchWrapper.get("chapters/all.json").then(data=>{
-        console.log(data)
+        displayCompletedChapters(data.filter(x=>x.isCompleted))
     })
 }
-displayCompletedChapters();
+function displayCompletedChapters(chapters) {
+    console.log("Received", chapters);
+}
+getChapters();
