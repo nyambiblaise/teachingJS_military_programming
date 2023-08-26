@@ -9,3 +9,21 @@ it's converting the body argument to a JSON string (with JSON.stringify) and sen
 it's converting the server response to json (response => response.json())
 From that, we can deduce that the put(endpoint, body) implementation looks like the following:
  */
+const dataToPost = {
+    name:"john",
+    grade:18,
+    age:15,
+    marks:{
+        java:12,
+        cpp:20
+    }
+}
+put(endpoint, dataToPost) {
+    return fetch(this.baseURL + endpoint, {
+        method: "put",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+    }).then(response => response.json());
+}
