@@ -7,5 +7,8 @@ import FetchWrapper from "./FetchWrapper.js";
 const fetchWrapper = new FetchWrapper("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/");
 
 const displayCompletedChapters = ()=>{
-    fetchWrapper.get("chapters/all.json")
+    fetchWrapper.get("chapters/all.json").then(data=>{
+        console.log(data)
+    })
 }
+displayCompletedChapters();
