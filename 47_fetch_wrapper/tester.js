@@ -10,7 +10,7 @@ fetchWrap.get("/notifications/new.json").then(data=>{
 //for the POST
 const postURL = "https://api.learnjavascript.online/";
 const data = {
-    grade:16
+    grade:9
 }
 const fetchWrap2 = new FetchWrapper(postURL);
 fetchWrap2.put("demo/grades.json",data).then(data=>{
