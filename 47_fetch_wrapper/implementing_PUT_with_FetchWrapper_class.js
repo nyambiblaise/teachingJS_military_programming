@@ -27,3 +27,14 @@ put(endpoint, dataToPost) {
         body: JSON.stringify(body)
     }).then(response => response.json());
 }
+
+/*
+Important things to note:
+
+The return is very important. It is what allows us to call .then(data => ...) on API.put(...). That's because it returns the result of fetch().then().
+Don't forget to prefix the endpoint with the this.baseURL.
+The method is set to put.
+The "Content-Type" header is being sent with every request (with a value of "application/json").
+The body is being converted to a JSON string with JSON.stringify(body). That JSON string is then sent as the body of the fetch request.
+Since we know that the API is always going to return JSON, then we convert the response to JSON inside the put() method so that we don't have to do that outside the FetchWrapper class.
+ */
