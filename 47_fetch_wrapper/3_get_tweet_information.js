@@ -9,8 +9,7 @@ const fetchWrapper = new FetchWrapper(url);
 
 const getTweetDetails = (xyz)=>{
     fetchWrapper.get(`tweet/1080777336298049537.json`).then(data=>{
-        //showAuthorName()
-        showAuthorName(data.author.details.firstName,data.author.details.firstName)
+        showAuthorName(data.author.details.firstName,data.author.details.lastName)
     })
 }
 const showAuthorName = (firstname,lastname)=>{
