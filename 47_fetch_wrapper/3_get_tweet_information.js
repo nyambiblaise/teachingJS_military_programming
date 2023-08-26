@@ -10,3 +10,6 @@ const fetchWrapper = new FetchWrapper(url);
 const getTweetDetails = ()=>{
     fetchWrapper.get(`${url}tweet/1080777336298049537.json`)
 }
+showAuthorName(firstname,lastname){
+    console.log(`${firstname} ${lastname}`);
+}
