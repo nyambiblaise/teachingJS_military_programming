@@ -7,8 +7,8 @@ import FetchWrapper from "./FetchWrapper.js";
 let url = "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/";
 const fetchWrapper = new FetchWrapper(url);
 
-const getTweetDetails = ()=>{
-    fetchWrapper.get(`${url}tweet/1080777336298049537.json`).then(data=>{
+const getTweetDetails = (xyz)=>{
+    fetchWrapper.get(`${xyz}tweet/1080777336298049537.json`).then(data=>{
         //showAuthorName()
         console.log(data)
     })
@@ -16,4 +16,4 @@ const getTweetDetails = ()=>{
 const showAuthorName = (firstname,lastname)=>{
     console.log(`${firstname} ${lastname}`);
 }
-getTweetDetails();
+getTweetDetails(url);
