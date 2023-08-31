@@ -12,7 +12,7 @@ const getMainElement = ()=>{
     return document.querySelector("#main");
 }
 const getAboutFromFooter = ()=>{
-    return document.querySelector("#footer-wrapper.about");
+    return document.querySelector("#footer-wrapper a.about");
 }
 const getTheParagraphElement = ()=>{
     return document.querySelector("#main.container p");
