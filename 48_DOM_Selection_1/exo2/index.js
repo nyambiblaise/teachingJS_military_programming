@@ -6,14 +6,14 @@ getAboutFromFooter() : get the about link that's in the footer
 getTheParagraphElement() : get the first paragraph element
  */
 const getNavbarElement = ()=>{
-    return document.querySelector("");
+    return document.querySelector("#navbar");
 }
 const getMainElement = ()=>{
-    return document.querySelector("");
+    return document.querySelector("#main");
 }
 const getAboutFromFooter = ()=>{
-    return document.querySelector("");
+    return document.querySelector("#footer-wrapper.about");
 }
 const getTheParagraphElement = ()=>{
-    return document.querySelector("");
+    return document.querySelector("#main.container p");
 }
