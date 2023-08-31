@@ -19,5 +19,14 @@ Assuming the following HTML:
     const correct = document.querySelector("a.menu-link")
 </script>
 /*
+The first selector will not work because a .menu-link means that there is an a element and then inside of it you should find an element with class="menu-link". This is incorrect.
 
+This is because the a and the element that has the class="menu-link" are the same element.
+In that case, the correct selector is a.menu-link (without spaces between them).
+
+You can read it as: select the item that is of type a and has the class menu-link.
+
+This is a common mistake so we wanted to mention it :)
+
+Similarly, you can select an item that has several classes, for example, .menu-link.active will select the item that has both classes menu-link and active.
  */
