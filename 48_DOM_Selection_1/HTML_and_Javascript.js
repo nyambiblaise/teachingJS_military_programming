@@ -1,6 +1,9 @@
 /*
 The DOM (Document Object Model) is a JavaScript object & API that represents the HTML of your page. It lets you interact from JavaScript with the elements on your page. You can read and change text, add and delete items, and a lot more.
 
+What does it return?
+document.querySelector("CSS-selector") returns an object which is an instance of HTMLElement. HTMLElement is the parent class that every single HTML element in your page inherits from. This means that every element on your page is an instance of a single class which is HTMLElement.
+
 Selecting a single item
 You can select a single item from the page using the document.querySelector method:
 */
