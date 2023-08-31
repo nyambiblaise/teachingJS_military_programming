@@ -10,4 +10,14 @@ document.querySelector("your-CSS-selector-here");
 The querySelector (note the capital S character) method expects a CSS selector. That's the same as the selectors you'd write in your CSS file.
 
 If there are multiple items that satisfy the CSS selector that you specified, only the first one is returned. Later on, we'll see how you can select more than 1 item at a time.
+
+Assuming the following HTML:
+ */
+<a href="/contact-us" className="menu-link">Contact us</a>
+<script>
+    const incorrect = document.querySelector("a .menu-link")
+    const correct = document.querySelector("a.menu-link")
+</script>
+/*
+
  */
