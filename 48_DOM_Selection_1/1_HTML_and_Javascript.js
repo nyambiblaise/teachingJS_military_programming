@@ -32,4 +32,19 @@ You can read it as: select the item that is of type a and has the class menu-lin
 This is a common mistake so we wanted to mention it :)
 
 Similarly, you can select an item that has several classes, for example, .menu-link.active will select the item that has both classes menu-link and active.
+
+Recap
+- The DOM is the HTML representation of your page which you can access & manipulate in JavaScript
+document.querySelector("your-CSS-selector-here") is used to select a single element from the DOM.
+
+- If there are more than one items that match your selector, then the first item is selected.
+Recap of common selectors:
+
+- h2 selects an element of type h2, for example <h2>.
+
+- # is for ID
+
+- . is for class
+
+  (space character) is for descendants
  */
