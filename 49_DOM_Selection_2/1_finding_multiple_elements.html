@@ -5,5 +5,8 @@ we use the document.querySelectorAll() to get all the elements that match the sp
 <p id="second">Second paragraph</p>
 <script>
  const sel = document.querySelectorAll("p");
- console.log(`data is ${sel}`);
+ //console.log(`data is ${sel}`);
+ sel.forEach(a=>{
+  console.log(a.textContent);
+ })
 </script>
