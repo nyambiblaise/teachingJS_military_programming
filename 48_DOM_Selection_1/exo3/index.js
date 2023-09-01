@@ -1,0 +1,3 @@
+/*
+Complete the getArticleHeadline function such that it returns the headline of the article.
+ */
