@@ -9,4 +9,12 @@ we use the document.querySelectorAll() to get all the elements that match the sp
  sel.forEach(a=>{
   console.log(a.textContent);
  })
+
+ /*
+ While document.querySelector() might return null (when no items are found), the document.querySelectorAll() will always return a NodeList. This is an important difference.
+
+A NodeList is a collection of DOM elements. This means that it is a variable that contains several DOM elements.
+
+The NodeList object is similar to an array, but it's not an array.
+  */
 </script>
