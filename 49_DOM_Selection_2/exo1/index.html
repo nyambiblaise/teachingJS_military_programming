@@ -1,0 +1,32 @@
+<!--
+Complete the getAllLinks function such that it finds and return all the links from the HTML page.
+--->
+<body>
+<nav id="navbar">
+    <span class="nav-brand">App</span>
+
+    <ul class="menu-links">
+        <li class="nav-item">
+            <a href="login.html" target="_blank">Login</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container" id="main">
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="login.html" target="_blank">Get started</a>
+</div>
+
+<footer id="footer-wrapper">
+    <a href="about.html" target="_blank">About us</a>
+    <a href="contact.html" target="_blank">Contact us</a>
+</footer>
+
+<script>
+    const getAllLinks = ()=>{
+        const links = document.querySelectorAll("a");
+        return links.textContent;
+    }
+    console.log(getAllLinks());
+</script>
