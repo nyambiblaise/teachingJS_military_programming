@@ -1,0 +1,16 @@
+<!----
+You should use document.querySelector() whenever you want to select one element from the DOM.
+
+document.getElementById("element-id") works similarly to document.querySelector("CSS-SELECTOR") except that it only expects an id so it can only find elements by id.
+
+This means that these 2 code snippets will return the same element:
+--->
+<div id="navbar">
+
+</div>
+<script>
+    const nav = document.querySelector("#navbar");
+    const nav2 = document.getElementById("navbar");
+
+    //both should work the same way, so it all depends on you.
+</script>
