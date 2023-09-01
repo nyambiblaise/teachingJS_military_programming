@@ -1,0 +1,51 @@
+<!--
+Complete the 3 functions such that they return what is expected.
+1. return all the div elements
+2. return all the links that are in the footer-wrapper
+3. return all the links that point to the About Us page
+--->
+<body>
+<nav id="navbar">
+  <span class="nav-brand">App</span>
+  <ul class="links">
+    <li class="nav-item">
+      <a href="about.html" class="about" target="_blank">About us</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container" id="main">
+  <div>
+    <h1>Hello World!</h1>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div></div>
+</div>
+
+<footer id="footer-wrapper">
+  <a href="about.html" class="about" target="_blank">About us</a>
+  <a href="contact.html" class="contact" target="_blank">Contact us</a>
+</footer>
+<script>
+  const getDivElements = () => {
+    // TODO: return all the div elements
+    return document.querySelectorAll("div");
+  }
+
+  const getFooterLinks = () => {
+    // TODO: return all the links that are in the footer-wrapper
+    return document.querySelectorAll("footer a #footer-wrapper")
+  }
+
+  const getAboutLinks = () => {
+    // TODO: return all the links that point to the About Us page
+    return document.querySelectorAll("footer a .about");
+  }
+  console.log(getDivElements());
+  console.log(getFooterLinks());
+  console.log(getAboutLinks());
+
+
+</script>
