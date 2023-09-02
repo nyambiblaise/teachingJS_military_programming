@@ -11,6 +11,10 @@ you can iterate through both of them with .forEach().
 <p>Second paragraph</p>
 
 <script>
-    const nb = document.querySelectorAll("p").length;
+    const nb = document.querySelectorAll("p");
     console.log(`There are ${nb} ps`)
+
+    nb.forEach(data=>{
+        console.log(data.textContent);
+    })
 </script>
