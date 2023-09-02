@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div>
 
-</body>
-</html>
+</div>
+
+<div>
+
+</div>
 <script>
+/*
+We know that NodeList only supports .length and .forEach(), but what if for some reason you want to use .map() or .filter()?
 
+Even though that's not very frequent, it's still quite useful to be able to call .filter() or other array-like methods on NodeList.
+To be able to do that, you have to convert the NodeList into an Array.
+ */
+const divs = document.querySelectorAll("div");
+const items = [...divs];
+
+//we can now perform a filter or map...
 </script>
