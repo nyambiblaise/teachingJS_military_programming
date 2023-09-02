@@ -44,6 +44,13 @@ Complete the getSelectedCurrencies function such that it returns an array of the
 Note: selected currencies have the active class added to them.
      */
     const getSelectedCurrencies = ()=>{
+        const singleCurrency = document.querySelectorAll(".cards .card.active");
+        const listCurrencies = [...singleCurrency];
 
+        //we now convert it into a new array
+        return listCurrencies.map(somedata=>{
+            return somedata.textContent;
+        });
     }
+    console.log(getSelectedCurrencies());
 </script>
