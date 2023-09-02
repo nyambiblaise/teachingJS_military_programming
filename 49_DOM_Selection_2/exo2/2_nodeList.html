@@ -22,4 +22,14 @@ you can iterate through both of them with .forEach().
 
     //NOTE: You cannot call .filter on a NodeList
     nb.filter() //wont work
+
+    /*
+    RECAP
+- document.querySelectorAll() always returns a NodeList.
+- NodeList supports 1 property similar to arrays which is .length.
+- NodeList supports accessing items by index. For example, [0].
+- NodeList supports 1 method similar to arrays which is .forEach().
+- All other array methods won't work on a NodeList. You cannot .filter on a NodeList.
+- You cannot call .textContent on a NodeList because this property does not exist. You will have to iterate over it.
+     */
 </script>
