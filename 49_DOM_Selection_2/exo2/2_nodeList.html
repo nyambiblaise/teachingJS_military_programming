@@ -19,4 +19,7 @@ you can iterate through both of them with .forEach().
     nb.forEach(data=>{
         console.log(data.textContent);
     })
+
+    //NOTE: You cannot call .filter on a NodeList
+    nb.filter() //wont work
 </script>
