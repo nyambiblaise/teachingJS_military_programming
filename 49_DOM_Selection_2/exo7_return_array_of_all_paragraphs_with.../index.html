@@ -43,9 +43,11 @@
             const listPara = [...Para];
 
             //getting the list...
-            return listPara.forEach(list=>{
-                return list.textContent;
-            })
+        return listPara.map(data=>{
+            if(data.textContent.length<10){
+                return data.textContent;
+            }
+        })
     }
     console.log(getShortTextParagraphs())
 </script>
