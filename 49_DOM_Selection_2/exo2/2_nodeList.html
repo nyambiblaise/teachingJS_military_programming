@@ -7,12 +7,14 @@ they both have a length property (you can access it with .length)
 you can access items at a specific index with the square brackets. For example, [0] and [1].
 you can iterate through both of them with .forEach().
 -->
-<p>First paragraph</p>
-<p>Second paragraph</p>
+<p>First paragraph 1</p>
+<p>Second paragraph 2</p>
 
 <script>
     const nb = document.querySelectorAll("p");
-    console.log(`There are ${nb} ps`)
+    console.log(`There are ${nb} ps`);
+    console.log(`First paragraph is ${nb[0].textContent}`);
+    console.log(`Second paragraph is ${nb[1].textContent}`);
 
     nb.forEach(data=>{
         console.log(data.textContent);
