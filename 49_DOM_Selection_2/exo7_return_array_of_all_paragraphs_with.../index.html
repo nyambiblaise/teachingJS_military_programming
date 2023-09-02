@@ -42,6 +42,10 @@
             const Para = document.querySelectorAll("p");
             const listPara = [...Para];
 
-            //gett
+            //getting the list...
+            return listPara.forEach(list=>{
+                return list.textContent;
+            })
     }
+    console.log(getShortTextParagraphs())
 </script>
