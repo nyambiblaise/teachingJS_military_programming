@@ -4,3 +4,4 @@ const logLinksTexts = ()=>{
         console.log(link.textContent);
     })
 }
+logLinksTexts();
