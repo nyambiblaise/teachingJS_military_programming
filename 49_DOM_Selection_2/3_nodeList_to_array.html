@@ -9,6 +9,10 @@
 /*
 We know that NodeList only supports .length and .forEach(), but what if for some reason you want to use .map() or .filter()?
 
+As you can see, you can convert a NodeList into an array using the array spread syntax (...) which spreads every single item of the NodeList, into a new array.
+
+After doing that, you can then call any array method on its result.
+
 Even though that's not very frequent, it's still quite useful to be able to call .filter() or other array-like methods on NodeList.
 To be able to do that, you have to convert the NodeList into an Array.
  */
