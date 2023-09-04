@@ -38,7 +38,7 @@
     const getShortTextParagraphs = ()=>{
         const allParas = document.querySelectorAll("p");
         const allParasArray = [...allParas];
-        return allParasArray.filter(d=>d.textContent);
+        return allParasArray.filter(d=>d.textContent.length<10);
     }
     console.log(getShortTextParagraphs());
 </script>
