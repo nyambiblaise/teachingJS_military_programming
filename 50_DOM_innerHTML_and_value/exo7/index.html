@@ -39,4 +39,10 @@ This function is automatically called whenever the user types a new character in
     const getUserComment = ()=>{
             return document.querySelector("#user-comment").value;
     }
+    const d = document.querySelector("#user-comment");
+    const data = document.querySelector("#data");
+
+    d.addEventListener("text",()=>{
+        data.textContent = getUserComment();
+    })
 </script>
