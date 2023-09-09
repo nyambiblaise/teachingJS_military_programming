@@ -37,7 +37,9 @@
   Complete the emptyShoppingList function such that it empties the contents of the shopping list <ul> element.
    */
     const emptyShoppingList = ()=>{
-
+        const t = document.querySelector("ul");
+        t.innerHTML = "";
+        return t;
   }
   console.log(emptyShoppingList())
 </script>
