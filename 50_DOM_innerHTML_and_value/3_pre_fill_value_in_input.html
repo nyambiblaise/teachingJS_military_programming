@@ -9,7 +9,10 @@
 
 So, as a rule of thumb, whenever you'd like to read the value written inside of an input>, a select>, or a textarea> you have to access the value property.
 </p>
+<textarea id="message"></textarea>
 <script>
     const t = document.querySelector("#email");
+    const msg = document.querySelector("#message");
     t.value="pop@gmail.com";
+    msg.value = "Welcome to JavaScript tutorial things 123..."
 </script>
