@@ -1,0 +1,12 @@
+- element.innerHTML returns the HTML inside the element, whereas element.textContent returns the text (with the HTML stripped out).
+
+- When changing element.innerHTML be careful to never trust user input.
+
+- You should avoid changing the value of element.innerHTML when the value you're changing to can be manipulated by the user.
+
+- You can empty an element by setting its innerHTML or textContent to an empty string (element.innerHTML = "").
+
+- textContent does NOT work on self-closing tags (for example, textboxes)
+- Use value to access the text written inside an <input> element.
+
+- The <textarea> is not self-closing but you still have to access the value property.
