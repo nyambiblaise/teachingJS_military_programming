@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+</head>
+<body>
+<nav id="navbar">
+    <a href="" class="nav-brand">App</a>
+    <ul>
+        <li class="nav-item"><a href="about.html">About us</a></li>
+        <li><a href="" class="nav-item btn btn-default">Register</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="main">
+    <h1>Welcome to our app</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+        voluptatem.
+    </p>
+    <p id="welcome-message"></p>
+</div>
+
+<footer id="footer-wrapper">
+    <a href="about.html" target="_blank">About us</a>
+    <a href="contact.html" target="_blank">Contact us</a>
+</footer>
+</body>
+</html>
+<script>
+    /*
+    Complete the setWelcomeMessage function such that it welcomes the user by writing: "Hello {name}" where the name is between <strong>...</strong> tags inside the p with id welcome-message.
+For this challenge, we will assume that name is not trusted. The name is provided by the user so malicious users are able to create XSS injections on your website.
+At the moment, there is no straightforward way to fix this issue without resorting to a library or framework. However, in this example, here's how you can fix it:
+
+You are allowed to edit the index.html file.
+In index.html, inside #welcome-message, manually edit it and write the following string: Hello <strong id="name"></strong>.
+Now, you can select the #name directly and write the name safely without having to use innerHTML.
+     */
+
+</script>
