@@ -37,7 +37,11 @@
 </body>
 </html>
 <script>
-    import {getSelectedCountry} from "./helpers";
+    //import {getSelectedCountry} from "./helpers";
+
+    const getSelectedCountry = () => {
+        return document.querySelector("#countries-dropdown").value;
+    }
 
     const dropdown = document.querySelector("#countries-dropdown");
     dropdown.addEventListener("change", () => {
