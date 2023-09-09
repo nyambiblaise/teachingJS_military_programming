@@ -33,9 +33,9 @@
   Complete the setWelcomeMessage function such that it welcomes the user by writing: "Hello {name}" where the name is between <strong>...</strong> tags inside the p with id welcome-message.
 For this challenge, we will assume that name is trusted (so, you can assume that it's safe).
    */
-    const setWelcomeMessage = ()=>{
+    const setWelcomeMessage = (name)=>{
         let t = document.querySelector("#welcome-message");
-        t.innerHTML = "<strong>Trusted</strong>";
+        t.innerHTML = `<strong>${name}</strong>`;
     }
-    console.log(setWelcomeMessage())
+    console.log(setWelcomeMessage("Jonas"))
 </script>
