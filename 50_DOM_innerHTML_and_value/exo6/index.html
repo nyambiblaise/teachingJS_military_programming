@@ -36,3 +36,12 @@
 </footer>
 </body>
 </html>
+<script>
+    import {getSelectedCountry} from "./helpers";
+
+    const dropdown = document.querySelector("#countries-dropdown");
+    dropdown.addEventListener("change", () => {
+        console.log(getSelectedCountry());
+    });
+
+</script>
