@@ -41,7 +41,8 @@ In index.html, inside #welcome-message, manually edit it and write the following
 Now, you can select the #name directly and write the name safely without having to use innerHTML.
      */
     const setWelcomeMessage = (name)=>{
-            return document.querySelector("#name").innerHTML = name;
+            return document.querySelector("#name").innerHTML = name; //vulnerable to XSS
+            return document.querySelector("#name").textContent = name; //safe against XSS
     }
     console.log(setWelcomeMessage("Titus"));
 </script>
