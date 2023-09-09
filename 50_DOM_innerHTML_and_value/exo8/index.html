@@ -45,5 +45,10 @@
         const l = document.querySelector("#last-name").value;
         return `${f} ${l}`;
     }
-    const info = document.querySelector("#info");
+    const msg = document.querySelector("#info");
+
+    const go = document.querySelector("#first-name");
+    go.addEventListener("keyup",()=>{
+        msg.textContent = getFullName();
+    })
 </script>
