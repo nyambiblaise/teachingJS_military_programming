@@ -41,5 +41,9 @@ Make sure to try this challenge in the browser tab. Write a name in the textbox 
     const getUserName = ()=>{
         return document.querySelector("#user-name").value;
     }
-    console.log(getUserName());
+    //console.log(getUserName());
+    document.querySelector("#name-form").addEventListener("submit", event => {
+        event.preventDefault();
+        console.log(getUserName());
+    });
 </script>
