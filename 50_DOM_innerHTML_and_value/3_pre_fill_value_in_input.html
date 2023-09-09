@@ -3,6 +3,12 @@
 <p>
     Say you already know the email of the user, and you want to pre-fill the textbox to make their life easier. You can do that by setting the value attribute:
 </p>
+<hr>
+<p>
+    Textareas (the textarea> element) is an exception. It is not a self-closing tag but you have to use value instead of textContent.
+
+So, as a rule of thumb, whenever you'd like to read the value written inside of an input>, a select>, or a textarea> you have to access the value property.
+</p>
 <script>
     const t = document.querySelector("#email");
     t.value="pop@gmail.com";
