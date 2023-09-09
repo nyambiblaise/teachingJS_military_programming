@@ -27,10 +27,8 @@
 </html>
 <script>
     const go = ()=>{
-        const d = document.querySelector("data");
         const e = document.querySelector("#email");
-        d.innerHTML = e.value;
-        console.log(e.value);
+        console.log(`Text is ${e.textContent}`);
     }
     go();
 </script>
