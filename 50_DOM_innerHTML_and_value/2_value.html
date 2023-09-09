@@ -26,6 +26,11 @@
 </body>
 </html>
 <script>
-    const d = document.querySelector("data");
-    d.value = document.querySelector("#email");
+    const go = ()=>{
+        const d = document.querySelector("data");
+        const e = document.querySelector("#email");
+        d.innerHTML = e.value;
+        console.log(e.value);
+    }
+    go();
 </script>
