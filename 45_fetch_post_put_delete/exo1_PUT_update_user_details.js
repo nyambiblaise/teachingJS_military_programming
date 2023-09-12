@@ -3,6 +3,7 @@ Base URL: https://api.learnjavascript.online/demo/
 Endpoint: user.json
 Method: PUT
 Body: {firstName: "Sam", lastName: "Green"} (replace with values from the form)
+
  */
 const apiURL = "https://api.learnjavascript.online/demo/user.json";
 const userData = {firstName: "Jude", lastName: "Nyambi"};
