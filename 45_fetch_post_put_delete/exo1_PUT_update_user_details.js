@@ -24,4 +24,5 @@ const updateUserProfile = (firstName, lastName)=>{
         console.error(error);
     })
 }
+
 updateUserProfile(userData)
