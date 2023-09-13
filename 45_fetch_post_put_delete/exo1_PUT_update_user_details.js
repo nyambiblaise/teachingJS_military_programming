@@ -7,7 +7,7 @@ Body: {firstName: "Sam", lastName: "Green"} (replace with values from the form)
  */
 const apiURL = "https://api.learnjavascript.online/demo/user.json";
 
-const userData = {firstName: "Jude", lastName: "Nyambi"};
+const userData = {firstName: "Jude", lastName: "Nyamb"};
 
 const updateUserProfile = (firstName, lastName)=>{
     return fetch(apiURL,{
