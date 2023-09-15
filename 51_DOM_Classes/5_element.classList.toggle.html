@@ -6,7 +6,18 @@
 </head>
 <body>
     <p>
-        Instead of actually checking whether a certain class is already present before removing it and checking whether a certain class is not already present before adding it, you can use the built-in toggle method:
+        Instead of actually checking whether a certain class is already present before removing it and checking whether a certain class is not already present before adding it, you can use the built-in toggle method:<br><br>
+
+        Notice how every time you call this toggle method, it either adds or removes the class depending on whether the class was already present on the DOM element or not.
     </p>
+    <div id="box">
+
+    </div>
 </body>
 </html>
+<script>
+    const box = document.querySelector("#box");
+    box.classList.toggle("activated"); // adds the class activated (because it wasn't there)
+    box.classList.toggle("activated"); // removes the class activated (because it was already added)
+    box.classList.toggle("activated"); // adds the class activated (because it wasn't there)
+</script>
