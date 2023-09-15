@@ -8,6 +8,20 @@ Even though the classList is read-only, but you can manipulate the classes it co
 Every HTML element has a classList object. This classList object allows you to call methods such as add, remove, and other methods that we'll learn about in the next lesson.
 
 It's isage is: element.classList.add(className)
+
+Add multiple classes
+Using the same element.classList.add() method that we learned about in the previous lesson, you can add multiple classes at the same time:
+
+
+element.classList.add("active", "highlighted", "dark");
+You can provide as many classes as you want, and they will be added to the DOM element.
+
+Remove multiple classes
+Similarly, you can use the element.classList.remove() method to remove multiple classes at the same time:
+
+
+element.classList.remove("active", "highlighted", "dark");
+All the classes provided will be removed from the DOM element.
 -->
 <ul id="shopping-list">
     <li id="first-item">Carrots</li>
