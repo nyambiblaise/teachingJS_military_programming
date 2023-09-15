@@ -48,6 +48,12 @@
         })
     }
     const activateClickedTab = (someTab)=>{
-
+        const currentClassElt = document.querySelector(someTab);
+        currentClassElt.classList.add("tab active");
     }
+    const someTab = document.querySelector(".tab");
+    someTab.addEventListener("click",()=>{
+        deactivateAllTabs();
+        activateClickedTab(someTab);
+    })
 </script>
