@@ -45,16 +45,9 @@
 <script>
     const msg = document.querySelector("#msg");
     const btn = document.querySelector("#menu-sidebar");
-
     const app = document.querySelector("#app-sidebar");
 
     btn.addEventListener("click",()=>{
-        app.classList.toggle("show");
-
-        /*if(app.classList.toggle("show")){
-            msg.textContent = "OPEN";
-        }else{
-            msg.textContent = "OPEN";
-        }*/
+        app.classList.toggle("show")?msg.textContent = "OPEN":msg.textContent = "CLOSED";
     });
 </script>
