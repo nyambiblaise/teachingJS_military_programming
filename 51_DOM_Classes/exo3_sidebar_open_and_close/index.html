@@ -10,7 +10,6 @@
     <a href="" class="nav-brand">App</a>
     <ul>
         <li><button id="menu-sidebar" class="nav-item btn btn-default">Sidebar</button></li>
-        <li><button id="menu-sidebar2" class="nav-item btn btn-default">Sidebar 2</button></li>
     </ul>
 </nav>
 
@@ -54,18 +53,17 @@
     }
     const msg = document.querySelector("#msg");
     const btn = document.querySelector("#menu-sidebar");//we need to check the state of the sidebar
-    const btn2 = document.querySelector("#menu-sidebar2");//we need to check the state of the sidebar
 
     const sb = document.querySelector("#app-sidebar");
 
     btn.addEventListener("click",()=>{
 
-        //msg.textContent = sb.value;
-        openSidebar();
-    });
-    btn2.addEventListener("click",()=>{
-
-        //msg.textContent = sb.value;
-        closeSidebar();
+        if(sb.classList.contains("show")){
+            closeSidebar();
+            msg.textContent = "Sidebar Closed";
+        }else{
+            openSidebar();
+            msg.textContent = "Sidebar Open";
+        }
     });
 </script>
