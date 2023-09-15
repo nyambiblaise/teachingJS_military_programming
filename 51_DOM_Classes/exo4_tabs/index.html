@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <nav id="navbar">
@@ -39,3 +40,14 @@
 </footer>
 </body>
 </html>
+<script>
+    const deactivateAllTabs = ()=>{
+        const tabs = document.querySelectorAll(".active");
+        tabs.forEach(someTab=>{
+            someTab.classList.remove("active");
+        })
+    }
+    const activateClickedTab = (someTab)=>{
+
+    }
+</script>
