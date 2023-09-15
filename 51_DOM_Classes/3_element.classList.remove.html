@@ -1,0 +1,12 @@
+<p>
+    you can use the element.classList.remove() method to remove a class.<br>
+    but a class attribute MUST exist
+</p>
+<ul id="shopping-list">
+    <li id="first-item" class="highlighted vegetables">Carrots</li>
+    <li>Avocado</li>
+</ul>
+<script>
+    const elt = document.querySelector("#first-item");
+    elt.classList.remove("highlighted"); //at the end, only the class vegetables will be left
+</script>
