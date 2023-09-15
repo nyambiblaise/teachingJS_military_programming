@@ -17,5 +17,11 @@ It's isage is: element.classList.add(className)
 
     /*
     The <li id="first-item">Carrots</li> element becomes <li id="first-item" class="highlighted">Carrots</li>.
+
+1- You can only access .classList on a single element. If you had a NodeList (from document.querySelectorAll), then you need to loop through it with forEach.
+
+2- To be able to manage classes (in this case add a class), you have to start by accessing .classList. A common mistake is to try and call ❌element.add() or ❌element.addClass() but these methods do not exist.
+
+3- All the methods under classList expect a class name. So you should not prefix the class name with a dot. element.classList.add(".highlighted") would not work as expected here.
      */
 </script>
