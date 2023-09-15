@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Page</title>
 </head>
 <body>
+<nav id="navbar">
+    <a href="" class="nav-brand">App</a>
+    <ul>
+        <li class="nav-item"><a href="about.html">About us</a></li>
+        <li><a href="" class="nav-item btn btn-default">Register</a></li>
+    </ul>
+</nav>
 
+<div class="container" id="main">
+    <p>This page contains 3 tabs. Every tab has a class tab. The one that is currently activated has the class active.
+        When you click on any of the tabs, we call the following functions in order:<br><br>
+
+        1- deactivateAllTabs(): this function receives no parameters and is supposed to remove the class active from every .tab element (or, since only one tab can be active in this challenge, you can remove the class active from the currently active tab).<br><br>
+
+        2- activateClickedTab(tab): this function receives the tab element that was clicked by the user and is supposed to add the class active to this element.</p><br />
+    <div class="tabs">
+        <div class="nav-tabs">
+            <ul>
+                <li><a class="tab active" href="#">About us</a></li>
+                <li><a class="tab" href="#">The team</a></li>
+                <li><a class="tab" href="#">What others say</a></li>
+            </ul>
+            <div class="border-tabs"></div>
+        </div>
+        <p>Tab content here</p>
+    </div>
+</div>
+
+<footer id="footer-wrapper">
+    <a href="about.html" target="_blank">About us</a>
+    <a href="contact.html" target="_blank">Contact us</a>
+</footer>
 </body>
 </html>
