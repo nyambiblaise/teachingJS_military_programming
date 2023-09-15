@@ -10,6 +10,7 @@
     <a href="" class="nav-brand">App</a>
     <ul>
         <li><button id="menu-sidebar" class="nav-item btn btn-default">Sidebar</button></li>
+        <li><button id="menu-sidebar2" class="nav-item btn btn-default">Sidebar 2</button></li>
     </ul>
 </nav>
 
@@ -28,9 +29,7 @@
 <div class="container" id="main">
     <h1>Welcome to our app</h1>
     <p>
-        In this challenge, the sidebar is already open. Clicking on the navbar's Sidebar button should close. When you click on it, we call the function closeSidebar.<br><br>
-
-        Complete the closeSidebar function such that it removes the class show to the element with id app-sidebar.
+        In this challenge, we want to use the 2 previous exos to open and close the sidebars.<br><br>
     </p>
     <p>
         <strong id="msg"></strong>
@@ -55,9 +54,18 @@
     }
     const msg = document.querySelector("#msg");
     const btn = document.querySelector("#menu-sidebar");//we need to check the state of the sidebar
+    const btn2 = document.querySelector("#menu-sidebar2");//we need to check the state of the sidebar
+
+    const sb = document.querySelector("#app-sidebar");
 
     btn.addEventListener("click",()=>{
-        msg.textContent = "Sidebar closed";
+
+        //msg.textContent = sb.value;
+        openSidebar();
+    });
+    btn2.addEventListener("click",()=>{
+
+        //msg.textContent = sb.value;
         closeSidebar();
     });
 </script>
