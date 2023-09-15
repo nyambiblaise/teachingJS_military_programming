@@ -31,6 +31,9 @@
 
         Complete the closeSidebar function such that it removes the class show to the element with id app-sidebar.
     </p>
+    <p>
+        <strong id="msg"></strong>
+    </p>
 </div>
 
 <footer id="footer-wrapper">
@@ -39,3 +42,17 @@
 </footer>
 </body>
 </html>
+
+<script>
+    const closeSidebar = ()=>{
+        const app = document.querySelector("#app-sidebar");
+        app.classList.remove("show");
+    }
+    const msg = document.querySelector("#msg");
+    const btn = document.querySelector("#menu-sidebar");
+
+    btn.addEventListener("click",()=>{
+        msg.textContent = "Sidebar closed";
+        closeSidebar();
+    });
+</script>
