@@ -6,7 +6,16 @@
 </head>
 <body>
     <p>
-        To check if an element has a certain class, we use the <strong>element.classList.contains("className")</strong>
+        To check if an element has a certain class, we use the <strong>element.classList.contains("className").<br>
+    it returns boolean.</strong>
     </p>
+    <div id="box" class="activated">
+
+    </div>
 </body>
 </html>
+<script>
+    const box = document.querySelector("#box");
+    box.classList.contains("activated"); // true
+    box.classList.contains("highlighted"); // false
+</script>
