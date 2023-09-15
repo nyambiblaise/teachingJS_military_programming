@@ -10,3 +10,11 @@
     const elt = document.querySelector("#first-item");
     elt.classList.remove("highlighted"); //at the end, only the class vegetables will be left
 </script>
+
+<p>
+    1- You can only access .classList on a single element. If you had a NodeList (from document.querySelectorAll), then you need to loop through it with forEach.<br>
+
+    2- To be able to manage classes (in this case remove a class), you have to start by accessing .classList. A common mistake is to try and call ❌element.remove() or ❌element.removeClass() but these methods do not exist.<br>
+
+    3- All the methods under classList expect a class name. So you should not prefix the class name with a dot. ❌element.classList.remove(".highlighted") would not work as expected here.
+</p>
