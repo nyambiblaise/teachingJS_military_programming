@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<nav id="navbar">
+    <a href="" class="nav-brand">App</a>
+    <ul>
+        <li><button id="menu-sidebar" class="nav-item btn btn-default">Sidebar</button></li>
+    </ul>
+</nav>
+
+<div id="app-sidebar" class="show">
+    <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact us</li>
+    </ul>
+    <div class="end">
+        <hr />
+        <p>&copy; 2021</p>
+    </div>
+</div>
+
+<div class="container" id="main">
+    <h1>Welcome to our app</h1>
+    <p>
+        In this challenge, the sidebar is already open. Clicking on the navbar's Sidebar button should close. When you click on it, we call the function closeSidebar.<br><br>
+
+        Complete the closeSidebar function such that it removes the class show to the element with id app-sidebar.
+    </p>
+    <p>
+        <strong id="msg"></strong>
+    </p>
+</div>
+
+<footer id="footer-wrapper">
+    <a href="about.html" target="_blank">About us</a>
+    <a href="contact.html" target="_blank">Contact us</a>
+</footer>
+</body>
+</html>
+
+<script>
+    const closeSidebar = ()=>{
+        const app = document.querySelector("#app-sidebar");
+        app.classList.remove("show");
+    }
+    const msg = document.querySelector("#msg");
+    const btn = document.querySelector("#menu-sidebar");
+
+    btn.addEventListener("click",()=>{
+        msg.textContent = "Sidebar closed";
+        closeSidebar();
+    });
+</script>
