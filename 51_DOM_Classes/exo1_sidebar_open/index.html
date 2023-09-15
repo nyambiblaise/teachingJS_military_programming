@@ -28,8 +28,10 @@
 <div class="container" id="main">
     <h1>Welcome to our app</h1>
     <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
-        voluptatem.
+        The navbar of the website now has a Sidebar button. When you click on it, we call the function openSidebar.<br><br>
+
+        Complete the openSidebar function such that it adds the class show to the element with id app-sidebar.<br><br>
+        Make sure to try it out in the browser tab as the sidebar will slide from the left side of the screen.
     </p>
     <p>
         <strong id="msg">Waiting...</strong>
@@ -46,7 +48,13 @@
     const btn = document.querySelector("#menu-sidebar");
     const msg = document.querySelector("#msg");
 
+    const openSideBar = ()=>{
+        const app = document.querySelector("#app-sidebar");
+        app.classList.add("show");
+    }
+
     btn.addEventListener("click",()=>{
         msg.textContent = "You Clicked";
+        openSideBar();
     })
 </script>
