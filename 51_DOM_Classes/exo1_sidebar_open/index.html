@@ -32,7 +32,7 @@
         voluptatem.
     </p>
     <p>
-        <strong id="msg"></strong>
+        <strong id="msg">Waiting...</strong>
     </p>
 </div>
 
@@ -46,7 +46,7 @@
     const btn = document.querySelector("#menu-sidebar");
     const msg = document.querySelector("#msg");
 
-    btn.addEventListener("keyup",()=>{
-        msg.innerHTML = "You Clicked";
+    btn.addEventListener("click",()=>{
+        msg.textContent = "You Clicked";
     })
 </script>
