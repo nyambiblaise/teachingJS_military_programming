@@ -31,6 +31,9 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
         voluptatem.
     </p>
+    <p>
+        <strong id="msg"></strong>
+    </p>
 </div>
 
 <footer id="footer-wrapper">
@@ -39,3 +42,11 @@
 </footer>
 </body>
 </html>
+<script>
+    const btn = document.querySelector("#menu-sidebar");
+    const msg = document.querySelector("#msg");
+
+    btn.addEventListener("keyup",()=>{
+        msg.innerHTML = "You Clicked";
+    })
+</script>
