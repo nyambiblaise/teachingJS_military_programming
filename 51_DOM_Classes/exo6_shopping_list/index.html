@@ -15,7 +15,7 @@
 </nav>
 
 <div class="container" id="main">
-    <h1>Welcome to our app</h1>
+    <h1>Welcome to our app <strong id="msg"></strong></h1>
     <p>
         We've got a shopping list. You can highlight items on the shopping list by clicking on an item.<br><br>
         When you click on an item, we automatically call the handleItemClick function with the item (the li) that was clicked.<br><br>
@@ -36,7 +36,12 @@
 </body>
 </html>
 <script>
-    const handleItemClick = ()=>{
-
+    const handleItemClick = (li)=>{
+        li.classList.toggle("highlighted");
     }
+    document.querySelectorAll("#shopping-list li").forEach(li => {
+        li.addEventListener("click", event => {
+            handleItemClick(event.currentTarget);
+        });
+    });
 </script>
