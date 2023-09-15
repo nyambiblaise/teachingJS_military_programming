@@ -13,7 +13,7 @@
     </ul>
 </nav>
 
-<div id="app-sidebar" class="show">
+<div id="app-sidebar">
     <ul>
         <li>Home</li>
         <li>About us</li>
@@ -49,8 +49,12 @@
         const app = document.querySelector("#app-sidebar");
         app.classList.remove("show");
     }
+    const openSidebar = ()=>{
+        const app = document.querySelector("#app-sidebar");
+        app.classList.add("show");
+    }
     const msg = document.querySelector("#msg");
-    const btn = document.querySelector("#menu-sidebar");
+    const btn = document.querySelector("#menu-sidebar");//we need to check the state of the sidebar
 
     btn.addEventListener("click",()=>{
         msg.textContent = "Sidebar closed";
