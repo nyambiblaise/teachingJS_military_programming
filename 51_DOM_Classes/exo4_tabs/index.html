@@ -30,7 +30,7 @@
             </ul>
             <div class="border-tabs"></div>
         </div>
-        <p>Tab content here</p>
+        <p id="clicked">Tab content here</p>
     </div>
 </div>
 
@@ -42,18 +42,25 @@
 </html>
 <script>
     const deactivateAllTabs = ()=>{
-        const tabs = document.querySelectorAll(".active");
+        const tabs = document.querySelectorAll(".tab");
         tabs.forEach(someTab=>{
             someTab.classList.remove("active");
         })
     }
     const activateClickedTab = (someTab)=>{
-        const currentClassElt = document.querySelector(someTab);
-        currentClassElt.classList.add("tab active");
+        someTab.classList.add("active");
     }
-    const someTab = document.querySelector(".tab");
-    someTab.addEventListener("click",()=>{
-        deactivateAllTabs();
-        activateClickedTab(someTab);
-    })
+    const someTab = document.querySelectorAll(".tab");
+    const ckd = document.querySelector("#clicked");
+
+    someTab.forEach(tab => {
+        tab.addEventListener("click", event => {
+            event.preventDefault();
+            const clickedTab = event.currentTarget;
+            ckd.textContent = `Viewing.... ${tab.textContent}`;
+            deactivateAllTabs();
+            activateClickedTab(clickedTab);
+        });
+    });
+
 </script>
