@@ -6,4 +6,5 @@ let thingsToDo = `Laundry, Wash dishes, Clean table.`;
 const getCountTodos = (someData) => {
     return someData.split(",").length;
 }
+
 console.log(getCountTodos(thingsToDo));
