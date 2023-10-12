@@ -37,6 +37,7 @@
     const handleItemClick = (li)=>{
         li.classList.toggle("highlighted");
     }
+
     document.querySelectorAll("#shopping-list li").forEach(li => {
         li.addEventListener("click", event => {
             handleItemClick(event.currentTarget);
