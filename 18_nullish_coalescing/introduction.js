@@ -1,6 +1,5 @@
 /*
 The nullish coalescing ?? operator is a new operator introduced in JavaScript that allows you to default to a certain value when the left-hand side is a nullish value.
-
 A nullish value is a value that is either null or undefined.
 
 Notice how when name is a nullish value (either null or undefined), then the right-hand side of the operator is executed. In this case, "N/A".
